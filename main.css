@@ -12,6 +12,11 @@ body {
   line-height: 28px;
   color: #747b95;
   background-color: #fafafa;
+  background-image: url(/assets/home/bg-pattern-header.svg),
+    url(/assets/home/bg-pattern-footer.svg);
+  background-position: top -175px center, top 100px center;
+  background-size: 458px, 1202px;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -190,6 +195,7 @@ nav {
   margin: 100px auto;
   color: white;
   height: 254px;
+  width: 328px;
 }
 
 .comingsoon-date {
