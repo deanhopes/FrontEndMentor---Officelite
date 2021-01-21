@@ -14,15 +14,17 @@ body {
 
 .container {
   margin: 0 24px 0 24px;
+  text-align: center;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
 }
 
 h2 {
@@ -40,15 +42,49 @@ h3 {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   justify-items: center;
 }
 
 nav {
   margin: 48px 0 80px 0;
+  display: flex;
+  justify-content: center;
 }
 
 #illustration {
+  display: inline-block;
   justify-self: center;
   width: 171px;
   height: 192px;
+  margin-bottom: 36px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 327px;
+  height: 378px;
+}
+
+.button-1 {
+  white-space: nowrap;
+  justify-self: center;
+  background-color: #5175ff;
+  border-radius: 28px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-style: none;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  width: 171px;
+  height: 56px;
+}
+
+.button-1:hover {
+  background-color: #829cff;
 }
