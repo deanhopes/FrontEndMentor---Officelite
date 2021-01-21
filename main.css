@@ -10,6 +10,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
   line-height: 28px;
+  color: #747b95;
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
 }
 
 h1 {
+  color: #333950;
   font-weight: bold;
   font-size: 40px;
   line-height: 48px;
@@ -67,6 +69,7 @@ nav {
   flex-direction: column;
   width: 327px;
   height: 378px;
+  margin-bottom: 100px;
 }
 
 .button-1 {
@@ -87,4 +90,9 @@ nav {
 
 .button-1:hover {
   background-color: #829cff;
+}
+
+.card-heading {
+  font-size: 56px;
+  color: #333950;
 }
