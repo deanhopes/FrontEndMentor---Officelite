@@ -20,9 +20,8 @@ body {
       to bottom,
       #fafafa 0%,
       #fafafa 50%,
-      #fafafa 50%,
-      #333950 50%,
-      #333950 100%
+      #25293a 50%,
+      #25293a 100%
     );
   background-position: top -175px center, bottom, bottom;
   background-size: 458px 458px, 980px, 100% 2500px;
@@ -35,6 +34,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#grid-signup {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 64px;
 }
 
 h1 {
@@ -84,6 +89,11 @@ nav {
   width: 327px;
   height: 378px;
   margin: 0 auto 100px;
+}
+
+#header-section-signup {
+  display: grid;
+  grid-gap: 16px;
 }
 
 .button-1 {

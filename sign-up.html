@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -14,16 +15,53 @@
     <title>Frontend Mentor | Officelite coming soon site</title>
   </head>
   <body>
-    Work smarter. Save time. Easily manage your projects. Get on the list and
-    receive in-app perks available only to early subscribers. We are moving into
-    final development and getting ready for official launch soon.
+    <div class="container">
+      <div id="grid-signup">
+        <header>
+          <nav>
+            <a href="index.html"
+              ><img src="/assets/shared/logo.svg" alt=""
+            /></a>
+          </nav>
+          <div id="header-section-signup">
+            <h1>Work smarter. Save time.</h1>
+            <p>
+              Easily manage your projects. Get on the list and receive in-app
+              perks available only to early subscribers. We are moving into
+              final development and getting ready for official launch soon.
+            </p>
+          </div>
+        </header>
+        <section>
+          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <h3>Coming <span class="comingsoon-date">4 Nov 2020</span></h3>
 
-    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-    Coming 4 Nov 2020
-
-    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-    47 Days 07 Hours 56 Min 14 Sec Name Email Address Basic Pack Free Basic Pack
-    Free Pro Pack $9.99 Ultimate Pack $19.99 Phone Number Company Get on the
-    list
+          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+          <div class="date-section">
+            <div class="date-section-card">
+              <p class="date-number">47</p>
+              <p class="date-unit">days</p>
+            </div>
+            <div class="date-section-card">
+              <p class="date-number">07</p>
+              <p class="date-unit">hours</p>
+            </div>
+            <div class="date-section-card">
+              <p class="date-number">46</p>
+              <p class="date-unit">min</p>
+            </div>
+            <div class="date-section-card">
+              <p class="date-number">14</p>
+              <p class="date-unit">sec</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          Name Email Address Basic Pack Free Basic Pack Free Pro Pack $9.99
+          Ultimate Pack $19.99 Phone Number Company
+          <button class="button-1">Get on the list</button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
