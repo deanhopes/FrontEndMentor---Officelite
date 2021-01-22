@@ -114,6 +114,7 @@ nav {
 
 .button-1:hover {
   background-color: #829cff;
+  cursor: pointer;
 }
 
 .button-2 {
@@ -133,6 +134,7 @@ nav {
 
 .button-2:hover {
   background-color: rgba(81, 117, 255, 0.25);
+  cursor: pointer;
 }
 
 .button-3 {
@@ -152,6 +154,7 @@ nav {
 
 .button-3:hover {
   color: #829cff;
+  cursor: pointer;
 }
 
 .card-heading {
@@ -242,12 +245,39 @@ nav {
   border-radius: 4px;
 }
 
+.date-section-card-signup {
+  background-color: rgba(81, 117, 255, 0.1);
+  height: 92px;
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 23px 0 12px 0;
+  border-radius: 4px;
+}
+
+.date-grid {
+  display: grid;
+  grid-gap: 18px;
+}
+
 .date-number {
   font-weight: bold;
   font-size: 32px;
 }
 
+.date-number-blue {
+  font-weight: bold;
+  font-size: 32px;
+  color: #5175ff;
+}
+
 .date-unit {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.date-unit-blue {
+  font-size: 12px;
+  color: #333950;
 }
