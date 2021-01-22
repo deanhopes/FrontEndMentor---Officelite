@@ -14,11 +14,18 @@ body {
 }
 
 .background {
-  background-color: #fafafa;
-  background-image: url(/assets/home/bg-pattern-header.svg),
-    url(/assets/home/bg-pattern-footer.svg);
-  background-position: top -175px center, top;
-  background-size: 458px 458px, 5000px;
+  background: url(/assets/home/bg-pattern-header.svg),
+    url(/assets/home/bg-pattern-footer.svg),
+    linear-gradient(
+      to bottom,
+      #fafafa 0%,
+      #fafafa 50%,
+      #fafafa 50%,
+      #333950 50%,
+      #333950 100%
+    );
+  background-position: top -175px center, bottom, bottom;
+  background-size: 458px 458px, 1100px, 100% 2500px;
   background-repeat: no-repeat;
 }
 
@@ -172,6 +179,7 @@ nav {
 .blue-card {
   background-image: url(/assets/home/bg-pattern-pricing.svg);
   background-position: 50% 102%;
+  background-repeat: no-repeat;
   background-color: #5175ff;
   color: white;
 }
