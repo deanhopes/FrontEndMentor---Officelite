@@ -11,11 +11,14 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #747b95;
+}
+
+.background {
   background-color: #fafafa;
   background-image: url(/assets/home/bg-pattern-header.svg),
     url(/assets/home/bg-pattern-footer.svg);
-  background-position: top -175px center, top 100px center;
-  background-size: 458px, 1202px;
+  background-position: top -175px center, top;
+  background-size: 458px 458px, 5000px;
   background-repeat: no-repeat;
 }
 
@@ -167,6 +170,8 @@ nav {
 }
 
 .blue-card {
+  background-image: url(/assets/home/bg-pattern-pricing.svg);
+  background-position: 50% 102%;
   background-color: #5175ff;
   color: white;
 }
