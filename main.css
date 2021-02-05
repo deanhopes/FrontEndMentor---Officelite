@@ -47,7 +47,7 @@ body {
       #25293a 100%
     );
   background-position: top -175px center, bottom, bottom;
-  background-size: 100%, 100%;
+  background-size: 125%, 100%;
   background-repeat: no-repeat;
 }
 
@@ -308,4 +308,7 @@ nav {
 .form-style {
   display: grid;
   grid-gap: 15px;
+  background-color: white;
+  padding: 10%;
+  border-radius: 13px;
 }
