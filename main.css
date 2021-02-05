@@ -42,8 +42,8 @@ body {
     linear-gradient(
       to bottom,
       #fafafa 0%,
-      #fafafa 85%,
-      #25293a 85%,
+      #fafafa 77%,
+      #25293a 77%,
       #25293a 100%
     );
   background-position: top -175px center, bottom, bottom;
@@ -311,4 +311,5 @@ nav {
   background-color: white;
   padding: 10%;
   border-radius: 13px;
+  margin-bottom: 25%;
 }
