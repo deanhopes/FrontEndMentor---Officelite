@@ -61,30 +61,53 @@
         <section>
           <form action=">">
             <h1 class="a11y-hidden">Login Form</h1>
-            <div>
-              <label class="label-email">
+            <div class="label-wrap">
+              <label class="label-style">
                 <input
                   type="text"
-                  class="text"
+                  class="text-form"
                   name="name"
                   placeholder="Name"
                   tabindex="1"
-                /><span class="required"></span>
+                />
               </label>
             </div>
-            <label class="label-email">
+            <label class="label-style">
               <input
                 type="email"
-                class="email"
+                class="email-form"
                 name="email"
                 placeholder="Email Address"
                 tabindex="2"
-              /><span class="required"></span>
+              />
+            </label>
+            <label class="label-style">
+              <select name="packs" id="packs">
+                <option value="basic">Basic Pack Free</option>
+                <option value="pro">Pro Pack $9.99</option>
+                <option value="ultimate">Ultimate Pack $19.99</option>
+              </select>
+            </label>
+            <label class="label-style">
+              <input
+                type="number"
+                class="number-form"
+                name="phone"
+                placeholder="Phone Number"
+                tabindex="3"
+              />
+            </label>
+            <label class="label-style">
+              <input
+                type="text"
+                class="company-form"
+                name="company"
+                placeholder="Company"
+                tabindex="4"
+              />
             </label>
           </div>
-            Name Email Address Basic Pack Free Basic Pack Free Pro Pack $9.99
-            Ultimate Pack $19.99 Phone Number Company
-            <button class="button-1">Get on the list</button>
+          <button class="button-1">Get on the list</button>
           </form>
         </section>
       </div>
