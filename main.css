@@ -36,6 +36,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.signup-background {
+  background: url(/assets/home/bg-pattern-header.svg),
+    url(/assets/home/bg-pattern-footer.svg),
+    linear-gradient(
+      to bottom,
+      #fafafa 0%,
+      #fafafa 85%,
+      #25293a 85%,
+      #25293a 100%
+    );
+  background-position: top -175px center, bottom, bottom;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+}
+
 .container {
   margin: 0 24px 0 24px;
   text-align: center;
@@ -292,4 +307,5 @@ nav {
 
 .form-style {
   display: grid;
+  grid-gap: 15px;
 }
