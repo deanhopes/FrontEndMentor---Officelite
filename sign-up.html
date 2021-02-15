@@ -59,10 +59,11 @@
           </div>
         </section>
         <section>
-            <form class="form-style" action=">">
+            <form class="form-style" action="/sign-up_form" method="POST">
               <h1 class="a11y-hidden">Login Form</h1>
-              <div class="label-wrap">
-                <label class="label-style">
+              <ul>
+               <li> 
+                 <label for="name">
                   <input
                     type="text"
                     class="text-form"
@@ -71,8 +72,9 @@
                     tabindex="1"
                   />
                 </label>
-              </div>
-              <label class="label-style">
+              </li>
+              <li> 
+                <label for="email">
                 <input
                   type="email"
                   class="email-form"
@@ -81,14 +83,17 @@
                   tabindex="2"
                 />
               </label>
-              <label class="label-style">
+            </li>
+            <li> 
+              <label for="pricepacks">
                 <select name="packs" id="packs">
                   <option value="basic">Basic Pack Free</option>
                   <option value="pro">Pro Pack $9.99</option>
                   <option value="ultimate">Ultimate Pack $19.99</option>
                 </select>
               </label>
-              <label class="label-style">
+            </li>
+              <label for="number">
                 <input
                   type="number"
                   class="number-form"
@@ -97,7 +102,8 @@
                   tabindex="3"
                 />
               </label>
-              <label class="label-style">
+              <li> 
+              <label for="company">
                 <input
                   type="text"
                   class="company-form"
@@ -106,6 +112,8 @@
                   tabindex="4"
                 />
               </label>
+            </li>
+            </ul>
             <button class="button-1">Get on the list</button>
             </form>
           </div>

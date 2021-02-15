@@ -48,6 +48,8 @@ body {
     );
   background-size: 125%, 100%;
   background-repeat: no-repeat;
+  background-position-x: -50px;
+  background-position-y: -170px;
 }
 
 .container {
