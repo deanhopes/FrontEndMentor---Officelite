@@ -399,25 +399,17 @@ form li + li {
   position: relative;
   display: flex;
   flex-direction: column;
-  border-width: 0 2px 0 2px;
-  border-style: solid;
-  border-color: #747b95;
 }
 
-.custom-select__triger {
+.custom-select__trigger {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 22px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #3b3b3b;
-  height: 60px;
-  line-height: 60px;
+  /* color: #747b95; */
   background: #ffffff;
   cursor: pointer;
-  border-width: 2px 0 2px 0;
+  border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #747b95;
 }
@@ -489,13 +481,13 @@ form li + li {
 .arrow::before {
   left: -5px;
   transform: rotate(45deg);
-  background-color: #394a6d;
+  background-color: #747b95;
 }
 
 .arrow::after {
   left: -5px;
   transform: rotate(45deg);
-  background-color: #394a6d;
+  background-color: #747b95;
 }
 
 .open .arrow::before {
