@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 /*
-Main
+Base 
 */
 
 *,
@@ -369,8 +369,9 @@ form li + li {
 }
 
 input,
-textarea,
-select {
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
   line-height: 28px;
@@ -378,8 +379,10 @@ select {
 }
 
 input:focus,
-textarea:focus,
-select:focus {
+textarea:focus {
+  -webkit-appearance: none;
+  appearance: none;
   border-style: solid;
   border-radius: 1px;
+  color: #333950;
 }

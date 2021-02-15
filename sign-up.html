@@ -86,11 +86,19 @@
             </li>
             <li> 
               <label for="pricepacks">
-                <select name="packs" id="packs">
-                  <option value="basic">Basic Pack Free</option>
-                  <option value="pro">Pro Pack $9.99</option>
-                  <option value="ultimate">Ultimate Pack $19.99</option>
-                </select>
+                <div class="custom-select-wrapper">
+                  <div class="custom-select">
+                    <div class="custom-select__trigger">
+                      <span>Basic Pack Free</span>
+                      <div class="arrow"></div>
+                    </div>
+                    <div class="custom-options">
+                      <span class="custom-option selected" data-value="basic">Basic Pack Free</span>
+                      <span class="custom-option" data-value="pro">Pro Pack $9.99/span>
+                      <span class="custom-option" data-value="ultimate">Ultimate Pack $19.99</span>
+                    </div>
+                  </div>
+                </div>
               </label>
             </li>
             <li>
