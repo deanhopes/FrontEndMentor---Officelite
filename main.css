@@ -346,3 +346,40 @@ Cards
 .card-paragraph-white {
   color: #747b95;
 }
+
+/*
+Forms
+*/
+
+form {
+  margin: 0 auto;
+  padding: 1em;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  /* If there's a li near an li within the form, add the margin */
+  margin-top: 1em;
+}
+
+input,
+textarea,
+select {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #747b95;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-style: solid;
+  border-radius: 1px;
+}
