@@ -174,7 +174,7 @@ nav {
   width: 328px;
 }
 .comingsoon-date {
-  color: #6565e7;
+  color: #5175ff;
 }
 
 .pricing-cards {
@@ -292,7 +292,7 @@ h3 {
 ----------------------------*/
 .button-1 {
   white-space: nowrap;
-  background-color: #6565e7;
+  background-color: #5175ff;
   border-radius: 28px;
   color: white;
   text-align: center;
@@ -370,7 +370,7 @@ h3 {
   background-image: url(/assets/home/bg-pattern-pricing.svg);
   background-position: 50% 102%;
   background-repeat: no-repeat;
-  background-color: #6565e7;
+  background-color: #5175ff;
   color: white;
 }
 .card-white {
@@ -480,22 +480,22 @@ form li + li {
   transition: all 0.5s;
 }
 .arrow:before {
-  left: -5px;
+  left: -20px;
   transform: rotate(-45deg);
-  background-color: #6565e7;
+  background-color: #5175ff;
 }
 .arrow:after {
-  left: 2px;
+  left: -14px;
   transform: rotate(45deg);
-  background-color: #6565e7;
+  background-color: #5175ff;
 }
 
 .open .arrow:before {
-  left: 5px;
+  left: -14px;
   transform: rotate(-45deg);
 }
 .open .arrow:after {
-  left: -2px;
+  left: -20px;
   transform: rotate(45deg);
 }
 

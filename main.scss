@@ -209,7 +209,7 @@ nav {
   height: 254px;
   width: 328px;
   &-date {
-    color: $softBlue;
+    color: #5175ff;
   }
 }
 
@@ -338,7 +338,7 @@ h3 {
 .button {
   &-1 {
     white-space: nowrap;
-    background-color: $softBlue;
+    background-color: #5175ff;
     border-radius: 28px;
     color: white;
     text-align: center;
@@ -417,7 +417,7 @@ h3 {
     background-image: url(/assets/home/bg-pattern-pricing.svg);
     background-position: 50% 102%;
     background-repeat: no-repeat;
-    background-color: $softBlue;
+    background-color: #5175ff;
     color: white;
   }
   &-white {
@@ -533,24 +533,24 @@ form li + li {
     transition: all 0.5s;
   }
   &:before {
-    left: -5px;
+    left: -20px;
     transform: rotate(-45deg);
-    background-color: $softBlue;
+    background-color: #5175ff;
   }
   &:after {
-    left: 2px;
+    left: -14px;
     transform: rotate(45deg);
-    background-color: $softBlue;
+    background-color: #5175ff;
   }
 }
 
 .open {
   .arrow:before {
-    left: 5px;
+    left: -14px;
     transform: rotate(-45deg);
   }
   .arrow:after {
-    left: -2px;
+    left: -20px;
     transform: rotate(45deg);
   }
 }
