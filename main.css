@@ -107,14 +107,13 @@ img:not([alt]) {
 /*----------------------------
 	Backgrounds
 ----------------------------*/
-.background {
+.background-home {
   background: url(/assets/home/bg-pattern-header.svg), url(/assets/home/bg-pattern-footer.svg), linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, #25293a 50%, #25293a 100%);
   background-position: top -175px center, bottom, bottom;
   background-size: 458px 458px, 980px, 100% 2500px;
   background-repeat: no-repeat;
 }
-
-.signup-background {
+.background-signup {
   background: url(/assets/home/bg-pattern-header.svg), url(/assets/home/bg-pattern-footer.svg), linear-gradient(to bottom, #fafafa 0%, #fafafa 77%, #25293a 77%, #25293a 100%);
   background-size: 125%, 100%;
   background-repeat: no-repeat;
@@ -173,6 +172,9 @@ nav {
   color: white;
   height: 254px;
   width: 328px;
+}
+.comingsoon-date {
+  color: #5175ff;
 }
 
 .pricing-cards {
@@ -266,25 +268,17 @@ h3 {
   font-weight: bold;
   font-size: 32px;
 }
-
 .date-number-blue {
-  font-weight: bold;
   font-size: 32px;
-  color: #5175ff;
+  font-weight: bold;
+  color: #6565e7;
 }
-
 .date-unit {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #e7e7e9;
 }
-
 .date-unit-blue {
-  font-size: 12px;
-  color: #333950;
-}
-
-.comingsoon-date {
-  color: #5175ff;
+  color: #787887;
 }
 
 /*----------------------------

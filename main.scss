@@ -24,7 +24,6 @@ $lightGrayishBlue: hsl(240, 5%, 91%);
 $fontSize: 12px;
 /** Font **/
 $fontFamily: 'Kumbh Sans', sans-serif;
-$fontWeights: 400, 700;
 
 /*----------------------------
 	RESET: START
@@ -124,34 +123,35 @@ img:not([alt]) {
 	Backgrounds
 ----------------------------*/
 .background {
-  background: url(/assets/home/bg-pattern-header.svg),
-    url(/assets/home/bg-pattern-footer.svg),
-    linear-gradient(
-      to bottom,
-      #fafafa 0%,
-      #fafafa 50%,
-      #25293a 50%,
-      #25293a 100%
-    );
-  background-position: top -175px center, bottom, bottom;
-  background-size: 458px 458px, 980px, 100% 2500px;
-  background-repeat: no-repeat;
-}
-
-.signup-background {
-  background: url(/assets/home/bg-pattern-header.svg),
-    url(/assets/home/bg-pattern-footer.svg),
-    linear-gradient(
-      to bottom,
-      #fafafa 0%,
-      #fafafa 77%,
-      #25293a 77%,
-      #25293a 100%
-    );
-  background-size: 125%, 100%;
-  background-repeat: no-repeat;
-  background-position-x: -50px;
-  background-position-y: -170px;
+  &-home {
+    background: url(/assets/home/bg-pattern-header.svg),
+      url(/assets/home/bg-pattern-footer.svg),
+      linear-gradient(
+        to bottom,
+        #fafafa 0%,
+        #fafafa 50%,
+        #25293a 50%,
+        #25293a 100%
+      );
+    background-position: top -175px center, bottom, bottom;
+    background-size: 458px 458px, 980px, 100% 2500px;
+    background-repeat: no-repeat;
+  }
+  &-signup {
+    background: url(/assets/home/bg-pattern-header.svg),
+      url(/assets/home/bg-pattern-footer.svg),
+      linear-gradient(
+        to bottom,
+        #fafafa 0%,
+        #fafafa 77%,
+        #25293a 77%,
+        #25293a 100%
+      );
+    background-size: 125%, 100%;
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+    background-position-y: -170px;
+  }
 }
 
 /*----------------------------
@@ -206,6 +206,9 @@ nav {
   color: white;
   height: 254px;
   width: 328px;
+  &-date {
+    color: #5175ff;
+  }
 }
 
 .pricing-cards {
@@ -262,7 +265,7 @@ nav {
 ----------------------------*/
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: $fontFamily;
   font-size: 16px;
   line-height: 28px;
   color: #747b95;
@@ -296,29 +299,23 @@ h3 {
   line-height: 64px;
 }
 
-.date-number {
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.date-number-blue {
-  font-weight: bold;
-  font-size: 32px;
-  color: #5175ff;
-}
-
-.date-unit {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.date-unit-blue {
-  font-size: 12px;
-  color: #333950;
-}
-
-.comingsoon-date {
-  color: #5175ff;
+.date {
+  &-number {
+    font-weight: bold;
+    font-size: 32px;
+    &-blue {
+      font-size: 32px;
+      font-weight: bold;
+      color: $softBlue;
+    }
+  }
+  &-unit {
+    font-size: $fontSize;
+    color: $lightGrayishBlue;
+    &-blue {
+      color: $darkGrayishBlue;
+    }
+  }
 }
 
 /*----------------------------
