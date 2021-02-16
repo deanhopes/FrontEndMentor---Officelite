@@ -189,7 +189,6 @@ nav {
   justify-content: space-between;
   margin: 0 0 14px 0;
 }
-
 .date-section-card {
   background-color: #333950;
   height: 92px;
@@ -200,7 +199,6 @@ nav {
   padding: 23px 0 12px 0;
   border-radius: 4px;
 }
-
 .date-section-card-signup {
   background-color: rgba(81, 117, 255, 0.1);
   height: 92px;
@@ -211,7 +209,6 @@ nav {
   padding: 23px 0 12px 0;
   border-radius: 4px;
 }
-
 .date-grid {
   display: grid;
   grid-gap: 18px;
@@ -308,12 +305,10 @@ h3 {
   height: 56px;
   margin: 0 auto;
 }
-
 .button-1:hover {
   background-color: #829cff;
   cursor: pointer;
 }
-
 .button-2 {
   white-space: nowrap;
   background-color: rgba(81, 117, 255, 0.15);
@@ -328,12 +323,10 @@ h3 {
   width: 171px;
   height: 56px;
 }
-
 .button-2:hover {
   background-color: rgba(81, 117, 255, 0.25);
   cursor: pointer;
 }
-
 .button-3 {
   white-space: nowrap;
   background-color: white;
@@ -348,7 +341,6 @@ h3 {
   width: 171px;
   height: 56px;
 }
-
 .button-3:hover {
   color: #829cff;
   cursor: pointer;
@@ -357,15 +349,6 @@ h3 {
 /*----------------------------
 	Cards
 ----------------------------*/
-.card-heading {
-  font-family: Kumbh Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
-  margin: 40px 0 40px 0;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -375,20 +358,25 @@ h3 {
   border-radius: 13px;
   margin: auto;
 }
-
-.blue-card {
+.card-heading {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 40px 0 40px 0;
+}
+.card-blue {
   background-image: url(/assets/home/bg-pattern-pricing.svg);
   background-position: 50% 102%;
   background-repeat: no-repeat;
   background-color: #5175ff;
   color: white;
 }
-
-.white-card {
+.card-white {
   color: #333950;
   background-color: white;
 }
-
 .card-paragraph {
   margin: 56px 0 32px 0;
   height: 116px;
@@ -396,7 +384,6 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .card-paragraph-white {
   color: #747b95;
 }
@@ -414,18 +401,16 @@ form li + li {
   margin-top: 1em;
 }
 
-.custom-select-wrapper {
-  position: relative;
-  user-select: none;
-  width: 100%;
-}
-
 .custom-select {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-
+.custom-select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
 .custom-select__trigger {
   position: relative;
   display: flex;
@@ -437,7 +422,6 @@ form li + li {
   border-style: solid;
   border-color: #747b95;
 }
-
 .custom-options {
   position: absolute;
   display: block;
@@ -453,13 +437,6 @@ form li + li {
   pointer-events: none;
   z-index: 2;
 }
-
-.custom-select.open .custom-options {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
 .custom-option {
   position: relative;
   display: block;
@@ -471,15 +448,19 @@ form li + li {
   cursor: pointer;
   transition: all 0.5s;
 }
-
 .custom-option:hover {
   cursor: pointer;
   background-color: #3b3b3b;
 }
-
 .custom-option.selected {
   color: #ffffff;
   background-color: #305c91;
+}
+
+.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 /*----------------------------
