@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 /*
 Base 
 */
+
 *,
 *:before,
 *:after {
@@ -11,7 +13,7 @@ Base
 }
 
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
   line-height: 28px;
   color: #747b95;
@@ -20,6 +22,7 @@ body {
 /*
 Accessibility
 */
+
 .a11y-hidden {
   position: absolute;
   top: -1000em;
@@ -29,15 +32,32 @@ Accessibility
 /*
 Backgrounds
 */
+
 .background {
-  background: url(/assets/home/bg-pattern-header.svg), url(/assets/home/bg-pattern-footer.svg), linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, #25293a 50%, #25293a 100%);
+  background: url(/assets/home/bg-pattern-header.svg),
+    url(/assets/home/bg-pattern-footer.svg),
+    linear-gradient(
+      to bottom,
+      #fafafa 0%,
+      #fafafa 50%,
+      #25293a 50%,
+      #25293a 100%
+    );
   background-position: top -175px center, bottom, bottom;
   background-size: 458px 458px, 980px, 100% 2500px;
   background-repeat: no-repeat;
 }
 
 .signup-background {
-  background: url(/assets/home/bg-pattern-header.svg), url(/assets/home/bg-pattern-footer.svg), linear-gradient(to bottom, #fafafa 0%, #fafafa 77%, #25293a 77%, #25293a 100%);
+  background: url(/assets/home/bg-pattern-header.svg),
+    url(/assets/home/bg-pattern-footer.svg),
+    linear-gradient(
+      to bottom,
+      #fafafa 0%,
+      #fafafa 77%,
+      #25293a 77%,
+      #25293a 100%
+    );
   background-size: 125%, 100%;
   background-repeat: no-repeat;
   background-position-x: -50px;
@@ -47,6 +67,7 @@ Backgrounds
 /*
 Layout
 */
+
 .container {
   margin: 0 24px 0 24px;
   text-align: center;
@@ -149,6 +170,7 @@ nav {
 /*
 Text
 */
+
 h1 {
   color: #333950;
   font-weight: bold;
@@ -205,6 +227,7 @@ h3 {
 /*
 Images
 */
+
 #illustration {
   width: 171px;
   height: 192px;
@@ -214,6 +237,7 @@ Images
 /*
 Buttons
 */
+
 .button-1 {
   white-space: nowrap;
   background-color: #5175ff;
@@ -240,7 +264,7 @@ Buttons
   background-color: rgba(81, 117, 255, 0.15);
   mix-blend-mode: normal;
   border-radius: 28px;
-  color: #5175ff;
+  color: rgba(81, 117, 255);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -260,7 +284,7 @@ Buttons
   background-color: white;
   mix-blend-mode: normal;
   border-radius: 28px;
-  color: #5175ff;
+  color: rgba(81, 117, 255);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -278,6 +302,7 @@ Buttons
 /*
 Cards
 */
+
 .card-heading {
   font-family: Kumbh Sans;
   font-style: normal;
@@ -325,6 +350,7 @@ Cards
 /*
 Forms
 */
+
 /* form {
   margin: 0 auto;
   padding: 1em;
@@ -352,6 +378,7 @@ textarea:focus {
   color: #333950;
 } 
 */
+
 ul {
   list-style: none;
   padding: 0;
@@ -434,6 +461,7 @@ form li + li {
 /*
   Arrow
   */
+
 .arrow {
   position: relative;
   height: 15px;
@@ -442,7 +470,7 @@ form li + li {
 
 .arrow::before,
 .arrow::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   width: 0.15rem;
@@ -466,10 +494,7 @@ form li + li {
   left: -5px;
   transform: rotate(-45deg);
 }
-
 .open .arrow::after {
   left: 5px;
   transform: rotate(45deg);
 }
-
-/*# sourceMappingURL=main.css.map */
