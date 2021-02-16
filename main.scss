@@ -184,13 +184,15 @@ nav {
   grid-gap: 64px;
 }
 
-.header-section {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 327px;
-  height: 378px;
-  margin: 0 auto 100px;
+.header {
+  &-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 327px;
+    height: 378px;
+    margin: 0 auto 100px;
+  }
 }
 
 #header-section-signup {
@@ -292,10 +294,12 @@ h3 {
   text-transform: uppercase;
 }
 
-.card-price {
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 64px;
+.card {
+  &-price {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px;
+  }
 }
 
 .date {
