@@ -94,9 +94,9 @@ body {
   color: #747b95;
 }
 
-/*
-Accessibility
-*/
+/*----------------------------
+	Accessibility
+----------------------------*/
 
 .a11y-hidden {
   position: absolute;
@@ -104,10 +104,9 @@ Accessibility
   left: -1000em;
 }
 
-/*
-Backgrounds
-*/
-
+/*----------------------------
+	Backgrounds
+----------------------------*/
 .background {
   background: url(/assets/home/bg-pattern-header.svg),
     url(/assets/home/bg-pattern-footer.svg),
@@ -139,9 +138,9 @@ Backgrounds
   background-position-y: -170px;
 }
 
-/*
-Layout
-*/
+/*----------------------------
+	Layout
+----------------------------*/
 
 .container {
   margin: 0 24px 0 24px;
@@ -299,9 +298,9 @@ h3 {
   color: #5175ff;
 }
 
-/*
-Images
-*/
+/*----------------------------
+	Images
+----------------------------*/
 
 #illustration {
   width: 171px;
@@ -309,9 +308,9 @@ Images
   margin-bottom: 36px;
 }
 
-/*
-Buttons
-*/
+/*----------------------------
+	Buttons
+----------------------------*/
 
 .button-1 {
   white-space: nowrap;
@@ -374,9 +373,9 @@ Buttons
   cursor: pointer;
 }
 
-/*
-Cards
-*/
+/*----------------------------
+	Cards
+----------------------------*/
 
 .card-heading {
   font-family: Kumbh Sans;
@@ -422,37 +421,9 @@ Cards
   color: #747b95;
 }
 
-/*
-Forms
-*/
-
-/* form {
-  margin: 0 auto;
-  padding: 1em;
-  border: none;
-}
-
-
-
-input,
-textarea {
-  -webkit-appearance: none;
-  appearance: none;
-  font-family: 'Kumbh Sans', sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  color: #747b95;
-}
-
-input:focus,
-textarea:focus {
-  -webkit-appearance: none;
-  appearance: none;
-  border-style: solid;
-  border-radius: 1px;
-  color: #333950;
-} 
-*/
+/*----------------------------
+	Forms
+----------------------------*/
 
 ul {
   list-style: none;
@@ -481,7 +452,6 @@ form li + li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* color: #747b95; */
   background: #ffffff;
   cursor: pointer;
   border-width: 0 0 1px 0;
@@ -533,9 +503,9 @@ form li + li {
   background-color: #305c91;
 }
 
-/*
-  Arrow
-  */
+/*----------------------------
+	Arrow
+----------------------------*/
 
 .arrow {
   position: relative;
