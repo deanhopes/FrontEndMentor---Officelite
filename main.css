@@ -471,9 +471,7 @@ form li + li {
   height: 15px;
   width: 15px;
 }
-
-.arrow::before,
-.arrow::after {
+.arrow:before, .arrow:after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -481,26 +479,23 @@ form li + li {
   height: 100%;
   transition: all 0.5s;
 }
-
-.arrow::before {
-  left: -5px;
-  transform: rotate(45deg);
-  background-color: #747b95;
-}
-
-.arrow::after {
-  left: -5px;
-  transform: rotate(45deg);
-  background-color: #747b95;
-}
-
-.open .arrow::before {
+.arrow:before {
   left: -5px;
   transform: rotate(-45deg);
+  background-color: #747b95;
+}
+.arrow:after {
+  left: 5px;
+  transform: rotate(45deg);
+  background-color: #747b95;
 }
 
-.open .arrow::after {
+.open .arrow:before {
   left: 5px;
+  transform: rotate(-45deg);
+}
+.open .arrow:after {
+  left: -5px;
   transform: rotate(45deg);
 }
 
