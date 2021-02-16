@@ -469,6 +469,14 @@ form li + li {
       border-width: 0 0 1px 0;
       border-style: solid;
       border-color: #747b95;
+      padding: 0 0 16px 16px;
+    }
+  }
+  &-span {
+    font-weight: bold;
+    color: #333950;
+    &__opacity {
+      opacity: 40%;
     }
   }
   &-options {
