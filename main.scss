@@ -3,6 +3,29 @@
 /*----------------------------
 	Variables
 ----------------------------*/
+/* Colors */
+
+/** Primary **/
+/*** Text ***/
+$veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+/*** Gradient ***/
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+/** Neutral **/
+/*** Text ***/
+$veryDarkGrayishBlue: hsl(237, 12%, 33%);
+$darkGrayishBlue: hsl(240, 6%, 50%);
+/*** Dividers ***/
+$lightGrayishBlue: hsl(240, 5%, 91%);
+
+/* Typography */
+/** Body Copy **/
+$fontSize: 12px;
+/** Font **/
+$fontFamily: 'Kumbh Sans', sans-serif;
+$fontWeights: 400, 700;
+
 /*----------------------------
 	RESET: START
 ------------------------------*/
@@ -85,13 +108,6 @@ img:not([alt]) {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-body {
-  font-family: 'Kumbh Sans', sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  color: #747b95;
 }
 
 /*----------------------------
@@ -241,9 +257,16 @@ nav {
   margin-bottom: 25%;
 }
 
-/*
-Text
-*/
+/*----------------------------
+	Typography
+----------------------------*/
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #747b95;
+}
 
 h1 {
   color: #333950;

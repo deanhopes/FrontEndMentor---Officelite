@@ -2,6 +2,16 @@
 /*----------------------------
 	Variables
 ----------------------------*/
+/* Colors */
+/** Primary **/
+/*** Text ***/
+/*** Gradient ***/
+/** Neutral **/
+/*** Text ***/
+/*** Dividers ***/
+/* Typography */
+/** Body Copy **/
+/** Font **/
 /*----------------------------
 	RESET: START
 ------------------------------*/
@@ -85,13 +95,6 @@ img:not([alt]) {
     scroll-behavior: auto !important;
   }
 }
-body {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 16px;
-  line-height: 28px;
-  color: #747b95;
-}
-
 /*----------------------------
 	Accessibility
 ----------------------------*/
@@ -221,9 +224,16 @@ nav {
   margin-bottom: 25%;
 }
 
-/*
-Text
-*/
+/*----------------------------
+	Typography
+----------------------------*/
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #747b95;
+}
+
 h1 {
   color: #333950;
   font-weight: bold;
