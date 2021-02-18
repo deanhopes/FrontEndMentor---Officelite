@@ -349,7 +349,8 @@ h3 {
     box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
     width: 171px;
     height: 56px;
-    margin: 0 auto;
+    margin: 1rem auto;
+    transition: background-color 0.6s ease;
   }
   &-1:hover {
     background-color: #829cff;
@@ -368,6 +369,7 @@ h3 {
     border-style: none;
     width: 171px;
     height: 56px;
+    transition: background-color 0.6s ease;
   }
   &-2:hover {
     background-color: rgba(81, 117, 255, 0.25);
@@ -386,6 +388,7 @@ h3 {
     border-style: none;
     width: 171px;
     height: 56px;
+    transition: background-color 0.6s ease;
   }
   &-3:hover {
     color: #829cff;
@@ -494,8 +497,14 @@ input {
   &-span {
     font-weight: bold;
     color: #333950;
+    &:hover {
+      color: #5175ff;
+    }
     &__opacity {
       opacity: 40%;
+      &:hover {
+        color: #333950;
+      }
     }
   }
   &-options {
