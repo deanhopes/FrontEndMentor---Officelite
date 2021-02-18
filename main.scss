@@ -269,7 +269,6 @@ body {
   font-family: $fontFamily;
   font-size: 16px;
   line-height: 28px;
-  color: #747b95;
 }
 
 h1 {
@@ -292,6 +291,9 @@ h3 {
   line-height: 48px;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+p {
+  color: #747b95;
 }
 
 .card {
@@ -492,12 +494,16 @@ input {
       border-style: solid;
       border-color: #dadada;
       padding: 1rem 0 1rem 1rem;
+      &:hover {
+        color: #5175ff;
+      }
     }
   }
   &-span {
     font-weight: bold;
-    color: #333950;
-    &:hover {
+    // color: #333950;
+    &:hover,
+    &__trigger {
       color: #5175ff;
     }
     &__opacity {
