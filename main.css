@@ -501,6 +501,30 @@ form li + li {
   margin-top: 1em;
 }
 
+input {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ffffff;
+  cursor: default;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  padding: 1rem;
+}
+
+input:hover {
+  color: #5175ff;
+  cursor: auto;
+}
+
 .custom-select {
   position: relative;
   display: -webkit-box;
@@ -537,7 +561,7 @@ form li + li {
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #747b95;
-  padding: 0 0 16px 16px;
+  padding: 1rem;
 }
 
 .custom-span {

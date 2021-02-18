@@ -449,6 +449,25 @@ ul {
 form li + li {
   margin-top: 1em;
 }
+
+// Need to figure out those bits of css + , etc
+input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  cursor: default;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  padding: 1rem;
+  &:hover {
+    color: #5175ff;
+    cursor: auto;
+  }
+}
+
 .custom {
   &-select {
     position: relative;
@@ -469,7 +488,7 @@ form li + li {
       border-width: 0 0 1px 0;
       border-style: solid;
       border-color: #747b95;
-      padding: 0 0 16px 16px;
+      padding: 1rem;
     }
   }
   &-span {
