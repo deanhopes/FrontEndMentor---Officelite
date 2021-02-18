@@ -487,7 +487,7 @@ input {
       cursor: pointer;
       border-width: 0 0 1px 0;
       border-style: solid;
-      border-color: #747b95;
+      border-color: #dadada;
       padding: 1rem 0 1rem 1rem;
     }
   }
@@ -504,7 +504,6 @@ input {
     top: 100%;
     left: 0;
     right: 0;
-    // border: 2px solid #747b95;
     border-top: 0;
     background: #fff;
     box-shadow: 0px 25px 25px -5px rgba(63, 91, 194, 0.247159);
@@ -521,18 +520,16 @@ input {
     justify-content: start;
     padding: 0 22px 0 22px;
     font-size: 16px;
+    font-weight: bold;
     padding: 1rem;
-    // font-weight: 300;
     color: #333950;
-    // line-height: 60px;
     cursor: pointer;
     transition: all 0.5s;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #dadada;
     &:hover {
       cursor: pointer;
       background-color: #5175ff;
       color: white;
-      // border-style: none;
     }
     &.selected {
       display: none;
