@@ -485,7 +485,7 @@ form li + li {
     top: 100%;
     left: 0;
     right: 0;
-    border: 2px solid #747b95;
+    // border: 2px solid #747b95;
     border-top: 0;
     background: #fff;
     transition: all 0.5s;
@@ -497,24 +497,25 @@ form li + li {
 
   &-option {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: start;
     padding: 0 22px 0 22px;
     font-size: 16px;
+    padding: 1rem;
     // font-weight: 300;
     color: #333950;
     // line-height: 60px;
     cursor: pointer;
     transition: all 0.5s;
-    border-style: none;
+    border-bottom: 1px solid;
     &:hover {
       cursor: pointer;
-      background-color: $darkGrayishBlue;
+      background-color: #5175ff;
       color: white;
+      // border-style: none;
     }
     &.selected {
-      color: #ffffff;
-      visibility: hidden;
-      // background-color: #305c91;
+      display: none;
     }
   }
 }

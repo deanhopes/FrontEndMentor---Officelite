@@ -555,7 +555,6 @@ form li + li {
   top: 100%;
   left: 0;
   right: 0;
-  border: 2px solid #747b95;
   border-top: 0;
   background: #fff;
   -webkit-transition: all 0.5s;
@@ -568,25 +567,30 @@ form li + li {
 
 .custom-option {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   padding: 0 22px 0 22px;
   font-size: 16px;
+  padding: 1rem;
   color: #333950;
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border-style: none;
+  border-bottom: 1px solid;
 }
 
 .custom-option:hover {
   cursor: pointer;
-  background-color: #787887;
+  background-color: #5175ff;
   color: white;
 }
 
 .custom-option.selected {
-  color: #ffffff;
-  visibility: hidden;
+  display: none;
 }
 
 .open .custom-options {
