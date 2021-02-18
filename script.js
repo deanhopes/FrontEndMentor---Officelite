@@ -1,77 +1,42 @@
 // https://andrejgajdos.com/custom-select-dropdown/
 
-document
-  .querySelector('.custom-select-wrapper')
-  .addEventListener('click', () => {
-    document.querySelector('.custom-select').classList.toggle('open');
-  });
+/**
+ * Functions
+ */
 
-for (const option of document.querySelectorAll('.custom-option')) {
-  option.addEventListener('click', function () {
-    if (!this.classList.contains('selected')) {
-      this.parentNode
-        .querySelector('.custom-option.selected')
-        .classList.remove('selected');
-      this.classList.add('selected');
-      this.closest('.custom-select').querySelector(
-        '.custom-select__trigger span'
-      ).innerHTML = this.innerHTML;
-    }
-  });
-}
-
-window.addEventListener('click', (e) => {
-  const select = document.querySelector('.custom-select');
-  if (!select.contains(e.target)) {
-    select.classList.remove('open');
-  }
-});
-
-var createAllErrors = function () {
-  var form = $(this),
-    errorList = $('ul.errorMessages', form);
-
-  var showAllErrorMessages = function () {
-    errorList.empty();
-
-    // Find all invalid fields within the form.
-    var invalidFields = form.find(':invalid').each(function (index, node) {
-      // Find the field's corresponding label
-      var label = $('label[for=' + node.id + '] '),
-        // Opera incorrectly does not fill the validationMessage property.
-        message = node.validationMessage || 'Invalid value.';
-
-      errorList
-        .show()
-        .append('<li><span>' + label.html() + '</span> ' + message + '</li>');
+const openSelectWrapper = () => {
+  document
+    .querySelector('.custom-select-wrapper')
+    .addEventListener('click', () => {
+      document.querySelector('.custom-select').classList.toggle('open');
     });
-  };
-
-  // Support Safari
-  form.on('submit', function (event) {
-    if (this.checkValidity && !this.checkValidity()) {
-      $(this).find(':invalid').first().focus();
-      event.preventDefault();
-    }
-  });
-
-  $('input[type=submit], button:not([type=button])', form).on(
-    'click',
-    showAllErrorMessages
-  );
-
-  $('input', form).on('keypress', function (event) {
-    var type = $(this).attr('type');
-    if (
-      /date|email|month|number|search|tel|text|time|url|week/.test(type) &&
-      event.keyCode == 13
-    ) {
-      showAllErrorMessages();
-    }
-  });
 };
 
-function getTimeRemaining(endtime) {
+const clickSelect = () => {
+  for (const option of document.querySelectorAll('.custom-option')) {
+    option.addEventListener('click', function () {
+      if (!this.classList.contains('selected')) {
+        this.parentNode
+          .querySelector('.custom-option.selected')
+          .classList.remove('selected');
+        this.classList.add('selected');
+        this.closest('.custom-select').querySelector(
+          '.custom-select__trigger span'
+        ).innerHTML = this.innerHTML;
+      }
+    });
+  }
+};
+
+const selectEscapeEvent = () =>
+  window.addEventListener('click', (e) => {
+    const select = document.querySelector('.custom-select');
+    if (!select.contains(e.target)) {
+      select.classList.remove('open');
+    }
+  });
+
+const getTimeRemaining = (endtime) => {
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
   const minutes = Math.floor((total / 1000 / 60) % 60);
@@ -85,9 +50,9 @@ function getTimeRemaining(endtime) {
     minutes,
     seconds,
   };
-}
+};
 
-function initializeClock(id, endtime) {
+const initializeClock = (id, endtime) => {
   const clock = document.getElementById(id);
   const daysSpan = clock.querySelector('.days');
   const hoursSpan = clock.querySelector('.hours');
@@ -109,7 +74,16 @@ function initializeClock(id, endtime) {
 
   updateClock();
   const timeinterval = setInterval(updateClock, 1000);
-}
+};
 
 const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+
+/**
+ * Function calls
+ */
+
+openSelectWrapper();
+clickSelect();
 initializeClock('clockdiv', deadline);
+getTimeRemaining();
+selectEscapeEvent();

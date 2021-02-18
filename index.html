@@ -29,7 +29,7 @@
         <div>
           <div class="header-section">
             <h1>A simple solution to complex tasks is coming soon</h1>
-            <p>
+            <p class="header-paragraph">
               Say goodbye to inefficient juggling of multiple apps, teams, and
               projects. Officelite is the new collaboration platform built with
               an intuitive interface to improve productivity.
@@ -87,29 +87,30 @@
         </section>
 
         <section class="comingsoon">
-          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-          <h3>Coming <span class="comingsoon-date">4 Nov 2020</span></h3>
+          <div class="date-grid">
+            <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+            <h3>Coming <span class="comingsoon-date">4 Nov 2020</span></h3>
 
-          <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-          <div class="date-section">
-            <div class="date-section-card">
-              <p class="date-number">47</p>
-              <p class="date-unit">days</p>
-            </div>
-            <div class="date-section-card">
-              <p class="date-number">07</p>
-              <p class="date-unit">hours</p>
-            </div>
-            <div class="date-section-card">
-              <p class="date-number">46</p>
-              <p class="date-unit">min</p>
-            </div>
-            <div class="date-section-card">
-              <p class="date-number">14</p>
-              <p class="date-unit">sec</p>
+            <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+            <div id="clockdiv" class="date-section">
+              <div class="date-section-card-signup">
+                <p class=""><span class="days"></span></p>
+                <p class="date-unit-blue">days</p>
+              </div>
+              <div class="date-section-card-signup">
+                <p class="date-number"><span class="hours"></span></p>
+                <p class="date-unit-blue">hours</p>
+              </div>
+              <div class="date-section-card-signup">
+                <span class="date-number minutes"></span>
+                <p class="date-unit-blue">min</p>
+              </div>
+              <div class="date-section-card-signup">
+                <p class="date-number"><span class="seconds"></span></p>
+                <p class="date-unit-blue">sec</p>
+              </div>
             </div>
           </div>
-          <button class="button-1">Get Started</button>
         </section>
       </main>
     </div>
