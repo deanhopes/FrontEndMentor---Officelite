@@ -581,6 +581,8 @@ input:hover {
   right: 0;
   border-top: 0;
   background: #fff;
+  -webkit-box-shadow: 0px 25px 25px -5px rgba(63, 91, 194, 0.247159);
+          box-shadow: 0px 25px 25px -5px rgba(63, 91, 194, 0.247159);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
