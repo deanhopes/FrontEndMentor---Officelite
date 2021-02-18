@@ -15,7 +15,7 @@ for (const option of document.querySelectorAll('.custom-option')) {
       this.classList.add('selected');
       this.closest('.custom-select').querySelector(
         '.custom-select__trigger span'
-      ).textContent = this.textContent;
+      ).innerHTML = this.innerHTML;
     }
   });
 }
