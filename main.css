@@ -581,9 +581,6 @@ input:hover {
 
 .custom-span__opacity {
   opacity: 40%;
-}
-
-.custom-span__opacity:hover {
   color: #333950;
 }
 
