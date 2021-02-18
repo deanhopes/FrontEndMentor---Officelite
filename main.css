@@ -529,6 +529,10 @@ input {
   padding: 1rem;
 }
 
+input:focus {
+  color: #5175ff;
+}
+
 input:hover {
   color: #5175ff;
   cursor: auto;
@@ -587,7 +591,6 @@ input:hover {
 
 .custom-span__opacity {
   opacity: 40%;
-  color: #333950;
 }
 
 .custom-options {

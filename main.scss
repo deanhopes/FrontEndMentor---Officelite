@@ -467,6 +467,10 @@ input {
   border-width: 0 0 1px 0;
   border-style: solid;
   padding: 1rem;
+  &:focus {
+    // opacity: 40%;
+    color: #5175ff;
+  }
   &:hover {
     color: #5175ff;
     cursor: auto;
@@ -508,7 +512,7 @@ input {
     }
     &__opacity {
       opacity: 40%;
-      color: #333950;
+      // color: #333950;
     }
   }
   &-options {
