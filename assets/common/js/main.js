@@ -4,38 +4,6 @@
  * Functions
  */
 
-const openSelectWrapper = () => {
-  document
-    .querySelector('.custom-select-wrapper')
-    .addEventListener('click', () => {
-      document.querySelector('.custom-select').classList.toggle('open');
-    });
-};
-
-const clickSelect = () => {
-  for (const option of document.querySelectorAll('.custom-option')) {
-    option.addEventListener('click', function () {
-      if (!this.classList.contains('selected')) {
-        this.parentNode
-          .querySelector('.custom-option.selected')
-          .classList.remove('selected');
-        this.classList.add('selected');
-        this.closest('.custom-select').querySelector(
-          '.custom-select__trigger span'
-        ).innerHTML = this.innerHTML;
-      }
-    });
-  }
-};
-
-const selectEscapeEvent = () =>
-  window.addEventListener('click', (e) => {
-    const select = document.querySelector('.custom-select');
-    if (!select.contains(e.target)) {
-      select.classList.remove('open');
-    }
-  });
-
 const getTimeRemaining = (endtime) => {
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
@@ -82,8 +50,5 @@ const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
  * Function calls
  */
 
-// openSelectWrapper();
-// clickSelect();
 initializeClock('clockdiv', deadline);
 getTimeRemaining();
-// selectEscapeEvent();
