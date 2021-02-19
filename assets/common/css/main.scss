@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*----------------------------
+	Variables
+----------------------------*/
+/* Colors */
+
+/** Primary **/
+/*** Text ***/
+$veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+/*** Gradient ***/
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+/** Neutral **/
+/*** Text ***/
+$veryDarkGrayishBlue: hsl(237, 12%, 33%);
+$darkGrayishBlue: hsl(240, 6%, 50%);
+/*** Dividers ***/
+$lightGrayishBlue: hsl(240, 5%, 91%);
+
+/* Typography */
+/** Body Copy **/
+$fontSize: 12px;
+/** Font **/
+$fontFamily: 'Kumbh Sans', sans-serif;
+
+/*----------------------------
+	RESET: START
+------------------------------*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*----------------------------
+	Accessibility
+----------------------------*/
+
+.a11y-hidden {
+  position: absolute;
+  top: -1000em;
+  left: -1000em;
+}
+
+/*----------------------------
+	Backgrounds
+----------------------------*/
+.background {
+  &-home {
+    background: url(/assets/images/home/bg-pattern-header.svg),
+      url(/assets/images/home/bg-pattern-footer.svg),
+      linear-gradient(
+        to bottom,
+        #fafafa 0%,
+        #fafafa 50%,
+        #25293a 50%,
+        #25293a 100%
+      );
+    background-position: top -175px center, bottom, bottom;
+    background-size: 458px 458px, 980px, 100% 2500px;
+    background-repeat: no-repeat;
+  }
+  &-signup {
+    background: url(/assets/images/home/bg-pattern-header.svg),
+      url(/assets/images/home/bg-pattern-footer.svg),
+      linear-gradient(
+        to bottom,
+        #fafafa 0%,
+        #fafafa 68%,
+        #25293a 68%,
+        #25293a 100%
+      );
+    background-size: 125%, 100%;
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+  }
+}
+
+/*----------------------------
+	Layout
+----------------------------*/
+
+.container {
+  margin: 0 24px 0 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+nav {
+  margin: 48px 0 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#grid-signup {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 64px;
+}
+
+.header {
+  &-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto 100px;
+  }
+  &-paragraph {
+    margin: 1rem auto;
+    color: #747b95;
+  }
+}
+
+#header-section-signup {
+  display: grid;
+  grid-gap: 16px;
+}
+
+.comingsoon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px auto;
+  color: white;
+  height: 254px;
+  width: 328px;
+  &-date {
+    color: #5175ff;
+  }
+}
+
+.pricing-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1588px;
+}
+
+.date {
+  &-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 14px 0;
+    &-card {
+      background-color: #333950;
+      height: 92px;
+      width: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 23px 0 12px 0;
+      border-radius: 4px;
+      &-signup {
+        background-color: rgba(81, 117, 255, 0.1);
+        height: 92px;
+        width: 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 23px 0 12px 0;
+        border-radius: 4px;
+      }
+    }
+  }
+  &-grid {
+    display: grid;
+    grid-gap: 18px;
+  }
+}
+
+.form-style {
+  display: grid;
+  grid-gap: 15px;
+  background-color: white;
+  padding: 10%;
+  border-radius: 13px;
+  margin-bottom: 25%;
+}
+
+/*----------------------------
+	Typography
+----------------------------*/
+
+body {
+  font-family: $fontFamily;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+h1 {
+  color: #333950;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card {
+  &-price {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+.date {
+  &-number {
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    &-blue {
+      font-size: 32px;
+      font-weight: bold;
+      color: $softBlue;
+    }
+  }
+  &-unit {
+    font-size: $fontSize;
+    color: $lightGrayishBlue;
+    &-blue {
+      color: $darkGrayishBlue;
+    }
+  }
+}
+
+/*----------------------------
+	Images
+----------------------------*/
+
+#illustration {
+  width: 171px;
+  height: 192px;
+  margin: 0 auto 32px;
+}
+
+/*----------------------------
+	Buttons
+----------------------------*/
+
+.button {
+  &-1 {
+    white-space: nowrap;
+    background-color: #5175ff;
+    border-radius: 28px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: none;
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+    width: 171px;
+    height: 56px;
+    margin: 1.5rem auto;
+    transition: background-color 0.6s ease;
+  }
+  &-1:hover {
+    background-color: #829cff;
+    cursor: pointer;
+  }
+  &-2 {
+    white-space: nowrap;
+    background-color: rgba(81, 117, 255, 0.15);
+    mix-blend-mode: normal;
+    border-radius: 28px;
+    color: rgb(81, 117, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: none;
+    width: 171px;
+    height: 56px;
+    transition: background-color 0.6s ease;
+  }
+  &-2:hover {
+    background-color: rgba(81, 117, 255, 0.25);
+    cursor: pointer;
+  }
+  &-3 {
+    white-space: nowrap;
+    background-color: white;
+    mix-blend-mode: normal;
+    border-radius: 28px;
+    color: rgb(81, 117, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: none;
+    width: 171px;
+    height: 56px;
+    transition: background-color 0.6s ease;
+  }
+  &-3:hover {
+    color: #829cff;
+    cursor: pointer;
+  }
+}
+
+/*----------------------------
+	Cards
+----------------------------*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 508px;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  margin: auto;
+  &-heading {
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 40px 0 40px 0;
+  }
+  &-blue {
+    background-image: url(/assets/images/home/bg-pattern-pricing.svg);
+    background-position: 50% 102%;
+    background-repeat: no-repeat;
+    background-color: #5175ff;
+    color: white;
+  }
+  &-white {
+    color: #333950;
+    background-color: white;
+  }
+  &-paragraph {
+    margin: 56px 0 32px 0;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-white {
+      color: #747b95;
+    }
+  }
+}
+
+/*----------------------------
+	Forms
+----------------------------*/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+// Need to figure out those bits of css + , etc
+input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  cursor: default;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  padding: 1rem;
+  &:focus {
+    // opacity: 40%;
+    color: #5175ff;
+  }
+  &:hover {
+    color: #5175ff;
+    cursor: auto;
+  }
+}
+
+.custom {
+  &-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &-wrapper {
+      position: relative;
+      user-select: none;
+      width: 100%;
+    }
+    &__trigger {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      cursor: pointer;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #dadada;
+      padding: 1rem 0 1rem 1rem;
+      &:hover {
+        color: #5175ff;
+      }
+    }
+  }
+  &-span {
+    font-weight: bold;
+    // color: #333950;
+    &:hover,
+    &__trigger {
+      color: #5175ff;
+    }
+    &__opacity {
+      opacity: 40%;
+      // color: #333950;
+    }
+  }
+  &-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0;
+    background: #fff;
+    box-shadow: 0px 25px 25px -5px rgba(63, 91, 194, 0.247159);
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &-option {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    padding: 0 22px 0 22px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+    color: #333950;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-bottom: 1px solid #dadada;
+    &:hover {
+      cursor: pointer;
+      background-color: #5175ff;
+      color: white;
+    }
+    &.selected {
+      display: none;
+    }
+  }
+}
+
+// Unsure how to place this in the above scss code if anyone can help.
+.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+/*----------------------------
+	Arrow
+----------------------------*/
+
+.arrow {
+  position: relative;
+  height: 5.5px;
+  width: 11px;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0.15rem;
+    height: 200%;
+    transition: all 0.5s;
+  }
+  &:before {
+    left: -20px;
+    transform: rotate(-45deg);
+    background-color: #5175ff;
+  }
+  &:after {
+    left: -14px;
+    transform: rotate(45deg);
+    background-color: #5175ff;
+  }
+}
+
+.open {
+  .arrow:before {
+    left: -14px;
+    transform: rotate(-45deg);
+  }
+  .arrow:after {
+    left: -20px;
+    transform: rotate(45deg);
+  }
+}
