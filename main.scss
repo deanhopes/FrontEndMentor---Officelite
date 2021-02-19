@@ -124,8 +124,8 @@ img:not([alt]) {
 ----------------------------*/
 .background {
   &-home {
-    background: url(/assets/home/bg-pattern-header.svg),
-      url(/assets/home/bg-pattern-footer.svg),
+    background: url(assets/images/home/bg-pattern-header.svg),
+      url(assets/images/home/bg-pattern-footer.svg),
       linear-gradient(
         to bottom,
         #fafafa 0%,
@@ -138,8 +138,8 @@ img:not([alt]) {
     background-repeat: no-repeat;
   }
   &-signup {
-    background: url(/assets/home/bg-pattern-header.svg),
-      url(/assets/home/bg-pattern-footer.svg),
+    background: url(assets/images/home/bg-pattern-header.svg),
+      url(assets/images/home/bg-pattern-footer.svg),
       linear-gradient(
         to bottom,
         #fafafa 0%,
@@ -419,7 +419,7 @@ h3 {
     margin: 40px 0 40px 0;
   }
   &-blue {
-    background-image: url(/assets/home/bg-pattern-pricing.svg);
+    background-image: url(assets/images/home/bg-pattern-pricing.svg);
     background-position: 50% 102%;
     background-repeat: no-repeat;
     background-color: #5175ff;

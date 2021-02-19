@@ -82,8 +82,8 @@ const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
  * Function calls
  */
 
-openSelectWrapper();
-clickSelect();
+// openSelectWrapper();
+// clickSelect();
 initializeClock('clockdiv', deadline);
 getTimeRemaining();
-selectEscapeEvent();
+// selectEscapeEvent();
