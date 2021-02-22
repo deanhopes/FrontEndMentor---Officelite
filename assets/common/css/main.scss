@@ -476,7 +476,9 @@ h3 {
   @media (min-width: 768px) {
     width: 100%;
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows: 50px 1fr 50px;
+    height: 23%;
   }
   &-heading {
     font-family: Kumbh Sans;
@@ -486,7 +488,18 @@ h3 {
     line-height: 28px;
     margin: 40px 0 40px 0;
     @media (min-width: 768px) {
-      grid-row-start: 1;
+      grid-row-start: 2;
+      grid-column-start: 2;
+    }
+    &__price {
+      grid-column-start: 2;
+      grid-row-start: 2;
+      align-self: center;
+    }
+    &__button {
+      grid-column-start: 2;
+      grid-row-start: 2;
+      align-self: end;
     }
   }
   &-blue {
@@ -509,6 +522,11 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (min-width: 768px) {
+      grid-column-start: 3;
+      grid-row-start: 2;
+      align-self: center;
+    }
     &-white {
       color: #747b95;
     }
