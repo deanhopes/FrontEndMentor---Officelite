@@ -490,11 +490,13 @@ h3 {
     @media (min-width: 768px) {
       grid-row-start: 2;
       grid-column-start: 2;
+      margin: 0;
     }
     &__price {
       grid-column-start: 2;
       grid-row-start: 2;
       align-self: center;
+      display: grid;
     }
     &__button {
       grid-column-start: 2;
@@ -513,7 +515,7 @@ h3 {
     color: #333950;
     background-color: white;
     @media (min-width: 768px) {
-      grid-row-start: 1;
+      justify-items: start;
     }
   }
   &-paragraph {
@@ -526,6 +528,7 @@ h3 {
       grid-column-start: 3;
       grid-row-start: 2;
       align-self: center;
+      justify-self: center;
     }
     &-white {
       color: #747b95;
