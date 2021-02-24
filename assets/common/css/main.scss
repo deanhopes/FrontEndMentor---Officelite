@@ -259,10 +259,12 @@ nav {
 }
 
 .pricing-cards {
-  display: flex;
+  display: grid;
+  margin: auto;
   flex-direction: column;
-  justify-content: space-between;
-  height: 1588px;
+  justify-content: center;
+  grid-gap: 2rem;
+  // height: 200%;
 }
 
 .date {
@@ -471,9 +473,6 @@ h3 {
   margin: auto;
   -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  @media (min-width: 768px) {
-    justify-items: start;
-  }
   &:hover {
     -webkit-transform: translate(0, -4px);
     -moz-transform: translate(0, -4px);
@@ -483,11 +482,13 @@ h3 {
     box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
   }
   @media (min-width: 768px) {
-    width: 100%;
+    width: auto;
+    justify-items: start;
     display: grid;
     grid-template-columns: 50px 1fr 1fr 50px;
     grid-template-rows: 50px 1fr 50px;
-    height: 23%;
+    height: 22rem;
+    width: 45rem;
   }
   &-heading {
     font-family: Kumbh Sans;

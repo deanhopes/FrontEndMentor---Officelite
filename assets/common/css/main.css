@@ -281,17 +281,17 @@ nav {
 }
 
 .pricing-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 1588px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 2rem;
 }
 
 .date-section {
@@ -546,12 +546,6 @@ h3 {
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-@media (min-width: 768px) {
-  .card {
-    justify-items: start;
-  }
-}
-
 .card:hover {
   -webkit-transform: translate(0, -4px);
   transform: translate(0, -4px);
@@ -561,14 +555,16 @@ h3 {
 
 @media (min-width: 768px) {
   .card {
-    width: 100%;
+    width: auto;
+    justify-items: start;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50px 1fr 1fr 50px;
         grid-template-columns: 50px 1fr 1fr 50px;
     -ms-grid-rows: 50px 1fr 50px;
         grid-template-rows: 50px 1fr 50px;
-    height: 23%;
+    height: 22rem;
+    width: 45rem;
   }
 }
 
