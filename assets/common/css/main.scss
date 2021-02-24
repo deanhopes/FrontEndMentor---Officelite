@@ -272,6 +272,9 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 0 0 14px 0;
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
     &-card {
       background-color: #333950;
       height: 92px;
@@ -290,12 +293,21 @@ nav {
         justify-content: space-between;
         padding: 23px 0 12px 0;
         border-radius: 4px;
+        @media (min-width: 768px) {
+          height: 8rem;
+          width: 6rem;
+          margin: 0 1rem;
+        }
       }
     }
   }
   &-grid {
     display: grid;
     grid-gap: 18px;
+    @media (min-width: 768px) {
+      width: 200%;
+      margin: 0 -10rem;
+    }
   }
 }
 
@@ -359,6 +371,10 @@ h3 {
     font-weight: bold;
     font-size: 32px;
     color: white;
+    @media (min-width: 768px) {
+      font-size: 56px;
+      margin: auto;
+    }
     &-blue {
       font-size: 32px;
       font-weight: bold;
