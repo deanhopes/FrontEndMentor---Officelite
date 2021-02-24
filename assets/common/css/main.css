@@ -211,13 +211,13 @@ nav {
   .header-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1.5fr 1fr;
-        grid-template-columns: 1.5fr 1fr;
+    -ms-grid-columns: 1.5fr 1.3fr;
+        grid-template-columns: 1.5fr 1.3fr;
     grid-auto-flow: dense;
     margin: 0 2%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    grid-gap: 120px;
+    grid-gap: 3rem;
   }
   .header-grid__end {
     -ms-grid-column-align: end;
