@@ -346,6 +346,9 @@ h3 {
     font-weight: bold;
     font-size: 56px;
     line-height: 64px;
+    @media (min-width: 768px) {
+      margin: -3rem 0 0 -3rem;
+    }
   }
 }
 
@@ -425,6 +428,9 @@ h3 {
     width: 171px;
     height: 56px;
     transition: background-color 0.6s ease;
+    @media (min-width: 768px) {
+      margin-bottom: 1.5rem;
+    }
   }
   &-2:hover {
     background-color: rgba(81, 117, 255, 0.25);
@@ -465,6 +471,9 @@ h3 {
   margin: auto;
   -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  @media (min-width: 768px) {
+    justify-items: start;
+  }
   &:hover {
     -webkit-transform: translate(0, -4px);
     -moz-transform: translate(0, -4px);
@@ -490,7 +499,7 @@ h3 {
     @media (min-width: 768px) {
       grid-row-start: 2;
       grid-column-start: 2;
-      margin: 0;
+      margin: 1rem 0;
     }
     &__price {
       grid-column-start: 2;
@@ -514,9 +523,6 @@ h3 {
   &-white {
     color: #333950;
     background-color: white;
-    @media (min-width: 768px) {
-      justify-items: start;
-    }
   }
   &-paragraph {
     margin: 56px 0 32px 0;
@@ -529,6 +535,7 @@ h3 {
       grid-row-start: 2;
       align-self: center;
       justify-self: center;
+      margin: auto;
     }
     &-white {
       color: #747b95;
