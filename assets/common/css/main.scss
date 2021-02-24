@@ -349,7 +349,7 @@ h3 {
     font-size: 56px;
     line-height: 64px;
     @media (min-width: 768px) {
-      margin: -3rem 0 0 -3rem;
+      justify-self: start;
     }
   }
 }
@@ -431,7 +431,7 @@ h3 {
     height: 56px;
     transition: background-color 0.6s ease;
     @media (min-width: 768px) {
-      margin-bottom: 1.5rem;
+      // margin-bottom: 1.5rem;
     }
   }
   &-2:hover {
@@ -481,15 +481,7 @@ h3 {
     transform: translate(0, -4px);
     box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
   }
-  @media (min-width: 768px) {
-    width: auto;
-    justify-items: start;
-    display: grid;
-    grid-template-columns: 50px 1fr 1fr 50px;
-    grid-template-rows: 50px 1fr 50px;
-    height: 22rem;
-    width: 45rem;
-  }
+
   &-heading {
     font-family: Kumbh Sans;
     font-style: normal;
@@ -507,6 +499,7 @@ h3 {
       grid-row-start: 2;
       align-self: center;
       display: grid;
+      margin-bottom: 2rem;
     }
     &__button {
       grid-column-start: 2;
@@ -520,10 +513,28 @@ h3 {
     background-repeat: no-repeat;
     background-color: #5175ff;
     color: white;
+    @media (min-width: 768px) {
+      width: auto;
+      justify-items: start;
+      display: grid;
+      grid-template-columns: 50px 1fr 1fr 50px;
+      grid-template-rows: 50px 1fr 50px;
+      height: 22rem;
+      width: 45rem;
+    }
   }
   &-white {
     color: #333950;
     background-color: white;
+    @media (min-width: 768px) {
+      width: auto;
+      justify-items: start;
+      display: grid;
+      grid-template-columns: 50px 1fr 1fr 50px;
+      grid-template-rows: 50px 1fr 50px;
+      height: 22rem;
+      width: 45rem;
+    }
   }
   &-paragraph {
     margin: 56px 0 32px 0;

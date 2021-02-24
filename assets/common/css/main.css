@@ -401,7 +401,8 @@ h3 {
 
 @media (min-width: 768px) {
   .card-price {
-    margin: -3rem 0 0 -3rem;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 
@@ -492,12 +493,6 @@ h3 {
   transition: background-color 0.6s ease;
 }
 
-@media (min-width: 768px) {
-  .button-2 {
-    margin-bottom: 1.5rem;
-  }
-}
-
 .button-2:hover {
   background-color: rgba(81, 117, 255, 0.25);
   cursor: pointer;
@@ -553,21 +548,6 @@ h3 {
           box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 768px) {
-  .card {
-    width: auto;
-    justify-items: start;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50px 1fr 1fr 50px;
-        grid-template-columns: 50px 1fr 1fr 50px;
-    -ms-grid-rows: 50px 1fr 50px;
-        grid-template-rows: 50px 1fr 50px;
-    height: 22rem;
-    width: 45rem;
-  }
-}
-
 .card-heading {
   font-family: Kumbh Sans;
   font-style: normal;
@@ -596,6 +576,7 @@ h3 {
       align-self: center;
   display: -ms-grid;
   display: grid;
+  margin-bottom: 2rem;
 }
 
 .card-heading__button {
@@ -616,9 +597,39 @@ h3 {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .card-blue {
+    width: auto;
+    justify-items: start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px 1fr 1fr 50px;
+        grid-template-columns: 50px 1fr 1fr 50px;
+    -ms-grid-rows: 50px 1fr 50px;
+        grid-template-rows: 50px 1fr 50px;
+    height: 22rem;
+    width: 45rem;
+  }
+}
+
 .card-white {
   color: #333950;
   background-color: white;
+}
+
+@media (min-width: 768px) {
+  .card-white {
+    width: auto;
+    justify-items: start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px 1fr 1fr 50px;
+        grid-template-columns: 50px 1fr 1fr 50px;
+    -ms-grid-rows: 50px 1fr 50px;
+        grid-template-rows: 50px 1fr 50px;
+    height: 22rem;
+    width: 45rem;
+  }
 }
 
 .card-paragraph {
