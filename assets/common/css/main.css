@@ -125,9 +125,10 @@ img:not([alt]) {
   }
 }
 
-.background-home-header__mobile {
+.background-home-header-mobile {
   z-index: -100;
   position: absolute;
+  top: -120px;
   -webkit-animation: rotating 10s linear infinite;
           animation: rotating 10s linear infinite;
 }
@@ -141,6 +142,25 @@ img:not([alt]) {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.background-home-footer-mobile {
+  z-index: -100;
+  position: absolute;
+  top: -120px;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
 }
 
 @keyframes rotating {

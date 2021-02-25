@@ -46,9 +46,20 @@ const initializeClock = (id, endtime) => {
 
 const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 
+const hoverSolarSystemAnimation = (id) => {
+  const rotation = document.querySelector('.rotation');
+  document.addEventListener('mouseover', () => {
+    // on mouse hover of illustration image rotate the
+    if (id.target == true) {
+      console.log('mouseover');
+    }
+  });
+};
+
 /**
  * Function calls
  */
 
 initializeClock('clockdiv', deadline);
 getTimeRemaining();
+hoverSolarSystemAnimation('illustration');

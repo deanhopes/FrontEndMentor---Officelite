@@ -141,15 +141,36 @@ img:not([alt]) {
       );
     }
     &-header {
-      &__mobile {
+      &-mobile {
         z-index: -100;
         position: absolute;
+        top: -120px;
         @keyframes rotating {
           from {
             transform: rotate(0deg);
           }
           to {
             transform: rotate(360deg);
+          }
+        }
+        animation: rotating 10s linear infinite;
+      }
+    }
+    &-footer {
+      &-mobile {
+        z-index: -100;
+        position: absolute;
+        top: -120px;
+        &__rotation {
+          &:hover {
+            @keyframes rotating {
+              from {
+                transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg);
+              }
+            }
           }
         }
         animation: rotating 10s linear infinite;
