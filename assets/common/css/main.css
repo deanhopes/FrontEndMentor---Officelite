@@ -128,7 +128,7 @@ img:not([alt]) {
 .background-home-header-mobile {
   z-index: -100;
   position: absolute;
-  top: -120px;
+  top: -125px;
   left: 0px;
   -webkit-animation: rotating 10s linear infinite;
           animation: rotating 10s linear infinite;
