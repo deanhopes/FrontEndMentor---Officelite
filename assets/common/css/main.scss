@@ -131,6 +131,30 @@ img:not([alt]) {
       #25293a 50%,
       #25293a 100%
     );
+    @media (min-width: 768px) {
+      background: linear-gradient(
+        to bottom,
+        #fafafa 0%,
+        #fafafa 55%,
+        #25293a 55%,
+        #25293a 100%
+      );
+    }
+    &-header {
+      &__mobile {
+        z-index: -100;
+        position: absolute;
+        @keyframes rotating {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        animation: rotating 10s linear infinite;
+      }
+    }
     // background-position: top -175px center, bottom, bottom;
     // background-size: 458px 458px, 980px, 100% 2500px;
     // background-repeat: no-repeat;
@@ -528,6 +552,7 @@ h3 {
       margin-bottom: 2rem;
       @media (min-width: 768px) {
         align-self: end;
+        margin-bottom: 0;
       }
     }
   }

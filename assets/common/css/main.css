@@ -118,6 +118,42 @@ img:not([alt]) {
   background: linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, #25293a 50%, #25293a 100%);
 }
 
+@media (min-width: 768px) {
+  .background-home {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), color-stop(55%, #fafafa), color-stop(55%, #25293a), to(#25293a));
+    background: linear-gradient(to bottom, #fafafa 0%, #fafafa 55%, #25293a 55%, #25293a 100%);
+  }
+}
+
+.background-home-header__mobile {
+  z-index: -100;
+  position: absolute;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .background-home-image__header {
   background-image: url(/assets/images/home/bg-pattern-header.svg);
 }
@@ -634,6 +670,7 @@ h3 {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+    margin-bottom: 0;
   }
 }
 
