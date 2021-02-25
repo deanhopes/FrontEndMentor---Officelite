@@ -629,8 +629,8 @@ h3 {
           box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
   margin: auto;
-  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @media (min-width: 768px) {
@@ -643,8 +643,8 @@ h3 {
 .card:hover {
   -webkit-transform: translate(0, -4px);
   transform: translate(0, -4px);
-  -webkit-box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .card-heading {
@@ -739,8 +739,8 @@ h3 {
 }
 
 .card-paragraph {
-  margin: 56px 0 32px 0;
-  height: 116px;
+  margin: 2rem 0 3rem 0;
+  height: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
