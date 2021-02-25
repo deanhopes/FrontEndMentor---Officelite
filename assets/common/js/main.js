@@ -62,4 +62,4 @@ const hoverSolarSystemAnimation = (id) => {
 
 initializeClock('clockdiv', deadline);
 getTimeRemaining();
-hoverSolarSystemAnimation('illustration');
+// hoverSolarSystemAnimation('illustration');

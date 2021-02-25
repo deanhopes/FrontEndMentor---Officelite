@@ -145,7 +145,10 @@ img:not([alt]) {
         z-index: -100;
         position: absolute;
         top: -120px;
-        @keyframes rotating {
+        left: 0px;
+        animation: rotating 10s linear infinite;
+        width: 100%;
+        e @keyframes rotating {
           from {
             transform: rotate(0deg);
           }
@@ -153,14 +156,13 @@ img:not([alt]) {
             transform: rotate(360deg);
           }
         }
-        animation: rotating 10s linear infinite;
       }
     }
     &-footer {
       &-mobile {
         z-index: -100;
         position: absolute;
-        top: -120px;
+        // top: 0px;
         &__rotation {
           &:hover {
             @keyframes rotating {
@@ -341,7 +343,7 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 23px 0 12px 0;
+        padding: 23px 0 12px;
         border-radius: 4px;
         @media (min-width: 768px) {
           height: 8rem;
