@@ -114,6 +114,10 @@ img:not([alt]) {
 	Backgrounds
 ----------------------------*/
 .background-home {
+  background-image: url(/assets/images/home/bg-pattern-pricing.svg);
+  background-position: 50% 102%;
+  background-repeat: no-repeat;
+  background-color: #5175ff;
   background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), color-stop(50%, #fafafa), color-stop(50%, #25293a), to(#25293a));
   background: linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, #25293a 50%, #25293a 100%);
 }
@@ -125,54 +129,26 @@ img:not([alt]) {
   }
 }
 
-.background-home-header-mobile {
+.background-home-header {
   z-index: -100;
   position: absolute;
   top: -125px;
   left: 0px;
-  -webkit-animation: rotating 10s linear infinite;
-          animation: rotating 10s linear infinite;
   width: 100%;
 }
 
-@-webkit-keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+@media (min-width: 768px) {
+  .background-home-header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 6rem 0 3rem 1rem;
   }
 }
 
-@keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.background-home-footer-mobile {
+.background-home-footer {
   z-index: -100;
   position: absolute;
-  -webkit-animation: rotating 10s linear infinite;
-          animation: rotating 10s linear infinite;
-}
-
-@keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 .background-home-image__header {
@@ -258,6 +234,21 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 768px) {
+  nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 6rem 0 3rem 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin: auto 0 6rem 0;
+  }
 }
 
 #grid-signup {

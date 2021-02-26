@@ -124,6 +124,10 @@ img:not([alt]) {
 ----------------------------*/
 .background {
   &-home {
+    background-image: url(/assets/images/home/bg-pattern-pricing.svg);
+    background-position: 50% 102%;
+    background-repeat: no-repeat;
+    background-color: #5175ff;
     background: linear-gradient(
       to bottom,
       #fafafa 0%,
@@ -141,46 +145,27 @@ img:not([alt]) {
       );
     }
     &-header {
-      &-mobile {
-        z-index: -100;
-        position: absolute;
-        top: -125px;
-        left: 0px;
-        animation: rotating 10s linear infinite;
-        width: 100%;
-        @keyframes rotating {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
+      // Mobile
+      z-index: -100;
+      position: absolute;
+      top: -125px;
+      left: 0px;
+      width: 100%;
+      // Tablet
+      @media (min-width: 768px) {
+        justify-content: start;
+        margin: 6rem 0 3rem 1rem;
       }
     }
     &-footer {
-      &-mobile {
-        z-index: -100;
-        position: absolute;
-        // top: 0px;
-        &__rotation {
-          &:hover {
-            @keyframes rotating {
-              from {
-                transform: rotate(0deg);
-              }
-              to {
-                transform: rotate(360deg);
-              }
-            }
-          }
-        }
-        animation: rotating 10s linear infinite;
-      }
+      // Mobile
+      z-index: -100;
+      position: absolute;
     }
-    // background-position: top -175px center, bottom, bottom;
-    // background-size: 458px 458px, 980px, 100% 2500px;
-    // background-repeat: no-repeat;
+    // @media (min-width: 768px) {
+    //   width: 10%;
+    // }
+
     &-image__header {
       background-image: url(/assets/images/home/bg-pattern-header.svg);
       &:before {
@@ -252,6 +237,16 @@ nav {
   margin: 48px 0 80px 0;
   display: flex;
   justify-content: center;
+  @media (min-width: 768px) {
+    justify-content: start;
+    margin: 6rem 0 3rem 1rem;
+  }
+}
+
+footer {
+  @media (min-width: 768px) {
+    margin: auto 0 6rem 0;
+  }
 }
 
 #grid-signup {
