@@ -118,6 +118,13 @@ img:not([alt]) {
   background: linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, #25293a 50%, #25293a 100%);
 }
 
+@media (min-width: 1080px) {
+  .background-home {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), color-stop(58%, #fafafa), color-stop(58%, #25293a), to(#25293a));
+    background: linear-gradient(to bottom, #fafafa 0%, #fafafa 58%, #25293a 58%, #25293a 100%);
+  }
+}
+
 .background-home-header {
   z-index: -100;
   position: absolute;

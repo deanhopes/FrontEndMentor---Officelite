@@ -131,6 +131,15 @@ img:not([alt]) {
       #25293a 50%,
       #25293a 100%
     );
+    @media (min-width: 1080px) {
+      background: linear-gradient(
+        to bottom,
+        #fafafa 0%,
+        #fafafa 58%,
+        #25293a 58%,
+        #25293a 100%
+      );
+    }
     &-header {
       // Mobile
       z-index: -100;
