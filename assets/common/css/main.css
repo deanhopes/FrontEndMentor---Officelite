@@ -137,6 +137,13 @@ img:not([alt]) {
   }
 }
 
+@media (min-width: 1080px) {
+  .background-home-header {
+    top: -597px;
+    left: 698px;
+  }
+}
+
 .background-home-footer {
   z-index: -100;
   position: absolute;

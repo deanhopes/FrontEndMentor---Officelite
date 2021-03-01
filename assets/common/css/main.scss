@@ -145,6 +145,10 @@ img:not([alt]) {
         top: -327px;
         left: 358px;
       }
+      @media (min-width: 1080px) {
+        top: -597px;
+        left: 698px;
+      }
     }
     &-footer {
       // Mobile
