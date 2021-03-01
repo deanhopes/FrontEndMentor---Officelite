@@ -295,13 +295,20 @@ footer {
   }
 }
 
-.pricing-cards {
-  display: grid;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  grid-gap: 2rem;
-  // height: 200%;
+.pricing {
+  &-cards {
+    display: grid;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 2rem;
+    @media (min-width: 1080px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 0;
+      justify-items: center;
+    }
+  }
 }
 
 .date {
@@ -404,6 +411,9 @@ h3 {
     line-height: 64px;
     @media (min-width: 768px) {
       justify-self: start;
+    }
+    @media (min-width: 1080px) {
+      justify-self: auto;
     }
   }
 }
@@ -523,13 +533,8 @@ h3 {
 ----------------------------*/
 
 .card {
-  display: flex;
-  flex-direction: column;
-  width: 327px;
-  height: 34rem;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
-  margin: auto;
   -moz-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   @media (min-width: 768px) {
@@ -558,14 +563,14 @@ h3 {
     }
     &__price {
       grid-column-start: 2;
-      grid-row-start: 2;
+      grid-row-start: 3;
       align-self: center;
       display: grid;
       margin-bottom: 2rem;
     }
     &__button {
       grid-column-start: 2;
-      grid-row-start: 2;
+      grid-row-start: 5;
       margin-bottom: 2rem;
       @media (min-width: 768px) {
         align-self: end;
@@ -588,6 +593,13 @@ h3 {
       height: 22rem;
       width: 45rem;
     }
+    @media (min-width: 1080px) {
+      height: 508px;
+      width: 350px;
+      justify-items: center;
+      grid-template-columns: 50px 1fr 50px;
+      grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
+    }
   }
   &-white {
     color: #333950;
@@ -600,6 +612,13 @@ h3 {
       grid-template-rows: 50px 1fr 50px;
       height: 22rem;
       width: 45rem;
+    }
+    @media (min-width: 1080px) {
+      height: 508px;
+      width: 350px;
+      justify-items: center;
+      grid-template-columns: 50px 1fr 50px;
+      grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
     }
   }
   &-paragraph {
@@ -614,6 +633,10 @@ h3 {
       align-self: center;
       justify-self: center;
       margin: auto;
+    }
+    @media (min-width: 1080px) {
+      grid-column-start: 2;
+      grid-row-start: 4;
     }
     &-white {
       color: #747b95;
