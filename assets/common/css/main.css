@@ -114,19 +114,8 @@ img:not([alt]) {
 	Backgrounds
 ----------------------------*/
 .background-home {
-  background-image: url(/assets/images/home/bg-pattern-pricing.svg);
-  background-position: 50% 102%;
-  background-repeat: no-repeat;
-  background-color: #5175ff;
   background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), color-stop(50%, #fafafa), color-stop(50%, #25293a), to(#25293a));
   background: linear-gradient(to bottom, #fafafa 0%, #fafafa 50%, #25293a 50%, #25293a 100%);
-}
-
-@media (min-width: 768px) {
-  .background-home {
-    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), color-stop(55%, #fafafa), color-stop(55%, #25293a), to(#25293a));
-    background: linear-gradient(to bottom, #fafafa 0%, #fafafa 55%, #25293a 55%, #25293a 100%);
-  }
 }
 
 .background-home-header {
@@ -143,6 +132,8 @@ img:not([alt]) {
         -ms-flex-pack: start;
             justify-content: start;
     margin: 6rem 0 3rem 1rem;
+    top: -327px;
+    left: 358px;
   }
 }
 
@@ -170,19 +161,6 @@ img:not([alt]) {
 
 .background-home-image__footer {
   background-image: url(/assets/images/home/bg-pattern-footer.svg);
-}
-
-.background-home-image__footer:before {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  z-index: -1;
-  background: url(/assets/images/home/bg-pattern-header.svg) 0 0 repeat;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
 }
 
 .background-signup {
@@ -241,7 +219,7 @@ nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    margin: 6rem 0 3rem 1rem;
+    margin: 6rem 0 6rem 1rem;
   }
 }
 
