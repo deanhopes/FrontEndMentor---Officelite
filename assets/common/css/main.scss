@@ -296,6 +296,8 @@ footer {
 }
 
 .pricing {
+  display: flex;
+  justify-content: center;
   &-cards {
     display: grid;
     margin: auto;
@@ -305,7 +307,6 @@ footer {
     @media (min-width: 1080px) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
-      grid-gap: 0;
       justify-items: center;
     }
   }
