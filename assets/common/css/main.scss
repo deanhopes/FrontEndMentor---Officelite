@@ -533,6 +533,10 @@ h3 {
     height: 56px;
     margin: 1.5rem auto;
     transition: background-color 0.6s ease;
+    &-1:hover {
+      background-color: #829cff;
+      cursor: pointer;
+    }
     @media (min-width: 768px) {
       margin: 1.5rem 0;
     }
@@ -560,10 +564,7 @@ h3 {
       }
     }
   }
-  &-1:hover {
-    background-color: #829cff;
-    cursor: pointer;
-  }
+
   &-2 {
     white-space: nowrap;
     background-color: rgba(81, 117, 255, 0.15);

@@ -655,6 +655,11 @@ h3 {
   transition: background-color 0.6s ease;
 }
 
+.button-1-1:hover {
+  background-color: #829cff;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .button-1 {
     margin: 1.5rem 0;
@@ -687,11 +692,6 @@ h3 {
 }
 
 .button-1__signup:hover {
-  background-color: #829cff;
-  cursor: pointer;
-}
-
-.button-1:hover {
   background-color: #829cff;
   cursor: pointer;
 }
