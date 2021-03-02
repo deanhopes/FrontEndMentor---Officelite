@@ -164,9 +164,6 @@ img:not([alt]) {
       z-index: -100;
       position: absolute;
     }
-    // @media (min-width: 768px) {
-    //   width: 10%;
-    // }
 
     &-image__header {
       background-image: url(/assets/images/home/bg-pattern-header.svg);
@@ -187,18 +184,14 @@ img:not([alt]) {
     }
   }
   &-signup {
-    background: url(/assets/images/home/bg-pattern-header.svg),
-      url(/assets/images/home/bg-pattern-footer.svg),
-      linear-gradient(
-        to bottom,
-        #fafafa 0%,
-        #fafafa 68%,
-        #25293a 68%,
-        #25293a 100%
-      );
-    background-size: 125%, 100%;
-    background-repeat: no-repeat;
-    background-position-x: -50px;
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      #fafafa 0%,
+      #fafafa 68%,
+      #25293a 68%,
+      #25293a 100%
+    );
   }
 }
 
@@ -316,8 +309,6 @@ footer {
 }
 
 .pricing {
-  display: flex;
-  justify-content: center;
   &-cards {
     display: grid;
     margin: auto;
@@ -449,6 +440,7 @@ h3 {
 }
 
 .card {
+  padding: 0 5%;
   &-price {
     font-weight: bold;
     font-size: 56px;
@@ -646,12 +638,16 @@ h3 {
       align-self: center;
       display: grid;
       margin-bottom: 2rem;
+      @media (min-width: 768px) {
+        align-self: start;
+      }
     }
     &__button {
       grid-column-start: 2;
       grid-row-start: 5;
       margin-bottom: 2rem;
       @media (min-width: 768px) {
+        grid-row-start: 3;
         align-self: end;
         margin-bottom: 0;
       }
@@ -662,13 +658,16 @@ h3 {
     background-position: 50% 102%;
     background-repeat: no-repeat;
     background-color: #5175ff;
+    justify-self: center;
+    padding: 0 35%;
     color: white;
     @media (min-width: 768px) {
       width: auto;
+      padding: 0;
       justify-items: start;
       display: grid;
       grid-template-columns: 50px 1fr 1fr 50px;
-      grid-template-rows: 50px 1fr 50px;
+      grid-template-rows: 50px 50px 1fr 50px;
       height: 22rem;
       width: 45rem;
     }
@@ -683,12 +682,15 @@ h3 {
   &-white {
     color: #333950;
     background-color: white;
+    justify-self: center;
+    padding: 0 35%;
     @media (min-width: 768px) {
       width: auto;
+      padding: 0;
       justify-items: start;
       display: grid;
       grid-template-columns: 50px 1fr 1fr 50px;
-      grid-template-rows: 50px 1fr 50px;
+      grid-template-rows: 50px 50px 1fr 50px;
       height: 22rem;
       width: 45rem;
     }
@@ -708,10 +710,10 @@ h3 {
     justify-content: space-between;
     @media (min-width: 768px) {
       grid-column-start: 3;
-      grid-row-start: 2;
-      align-self: center;
+      grid-row-start: 3;
       justify-self: center;
-      margin: auto;
+      margin: 0;
+      align-self: start;
     }
     @media (min-width: 1080px) {
       grid-column-start: 2;
