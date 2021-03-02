@@ -432,8 +432,7 @@ nav {
 
 .date-section-card-signup {
   background-color: rgba(81, 117, 255, 0.1);
-  height: 92px;
-  width: 72px;
+  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,6 +586,12 @@ h3 {
 }
 
 .date-number-blue {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6565e7;
+}
+
+.date-number-blue__signup {
   font-size: 32px;
   font-weight: bold;
   color: #6565e7;
