@@ -458,6 +458,14 @@ h3 {
       font-size: 32px;
       font-weight: bold;
       color: $softBlue;
+      &__signup {
+        @media (min-width: 768px) {
+          font-size: 56px;
+          font-weight: bold;
+          color: $softBlue;
+          margin: auto;
+        }
+      }
     }
   }
   &-unit {
