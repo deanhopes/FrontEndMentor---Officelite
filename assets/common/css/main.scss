@@ -293,6 +293,10 @@ footer {
 #header-section-signup {
   display: grid;
   grid-gap: 16px;
+  @media (min-width: 768px) {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .comingsoon {
@@ -366,6 +370,12 @@ footer {
     @media (min-width: 768px) {
       width: 200%;
       margin: 0 -10rem;
+    }
+    &__signup {
+      @media (min-width) {
+        width: 100%;
+        margin: auto;
+      }
     }
   }
 }
