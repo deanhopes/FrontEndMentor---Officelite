@@ -45,6 +45,13 @@ dd {
   margin: 0;
 }
 
+@media (min-width: 1080px) {
+  h3 {
+    text-align: left;
+    padding: 0 1rem;
+  }
+}
+
 /* Set core root defaults */
 html {
   scroll-behavior: smooth;
@@ -178,9 +185,15 @@ img:not([alt]) {
 }
 
 .background-signup {
-  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), color-stop(68%, #fafafa), color-stop(68%, #25293a), to(#25293a));
   background: linear-gradient(to bottom, #fafafa 0%, #fafafa 68%, #25293a 68%, #25293a 100%);
+}
+
+@media (min-width: 1080px) {
+  .background-signup {
+    background: -webkit-gradient(linear, left top, right top, from(#fafafa), color-stop(68%, #fafafa), color-stop(68%, #25293a), to(#25293a));
+    background: linear-gradient(to right, #fafafa 0%, #fafafa 68%, #25293a 68%, #25293a 100%);
+  }
 }
 
 /*----------------------------
@@ -257,8 +270,8 @@ nav {
 
 @media (min-width: 1080px) {
   #grid-signup {
-    -ms-grid-rows: 200px 1fr 1fr;
-        grid-template-rows: 200px 1fr 1fr;
+    -ms-grid-rows: 200px 1fr;
+        grid-template-rows: 200px 1fr;
     grid-gap: 64px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -327,6 +340,7 @@ nav {
   .header-paragraph {
     font-size: 18px;
     line-height: 28px;
+    text-align: left;
   }
 }
 
@@ -345,6 +359,14 @@ nav {
 
 #header-section-signup h1 {
   text-align: center;
+}
+
+@media (min-width: 1080px) {
+  #header-section-signup h1 {
+    width: 82%;
+    text-align: left;
+    font-size: 56px;
+  }
 }
 
 .comingsoon {
@@ -408,6 +430,14 @@ nav {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 2rem 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  .date-section {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -503,7 +533,7 @@ nav {
 
 @media (min-width: 768px) {
   #date-section {
-    margin: 0 3rem 10rem;
+    margin: 0 3rem 0;
   }
 }
 
@@ -514,7 +544,7 @@ nav {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin: 330px 3rem 10rem;
+    margin: 350px 3rem 10rem;
   }
 }
 
@@ -524,6 +554,16 @@ nav {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+}
+
+@media (min-width: 1080px) {
+  #form-section {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
 }
 
 /*----------------------------

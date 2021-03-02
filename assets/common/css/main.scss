@@ -57,6 +57,13 @@ dd {
   margin: 0;
 }
 
+h3 {
+  @media (min-width: 1080px) {
+    text-align: left;
+    padding: 0 1rem;
+  }
+}
+
 /* Set core root defaults */
 html {
   scroll-behavior: smooth;
@@ -184,7 +191,6 @@ img:not([alt]) {
     }
   }
   &-signup {
-    position: relative;
     background: linear-gradient(
       to bottom,
       #fafafa 0%,
@@ -192,6 +198,15 @@ img:not([alt]) {
       #25293a 68%,
       #25293a 100%
     );
+    @media (min-width: 1080px) {
+      background: linear-gradient(
+        to right,
+        #fafafa 0%,
+        #fafafa 68%,
+        #25293a 68%,
+        #25293a 100%
+      );
+    }
   }
 }
 
@@ -241,7 +256,7 @@ footer {
   grid-template-rows: auto auto auto;
   grid-gap: 64px;
   @media (min-width: 1080px) {
-    grid-template-rows: 200px 1fr 1fr;
+    grid-template-rows: 200px 1fr;
     grid-gap: 64px;
     grid-template-columns: 1fr 1fr;
   }
@@ -284,6 +299,7 @@ footer {
     @media (min-width: 1080px) {
       font-size: 18px;
       line-height: 28px;
+      text-align: left;
     }
   }
 }
@@ -295,8 +311,14 @@ footer {
     width: 80%;
     margin: auto;
   }
+
   h1 {
     text-align: center;
+    @media (min-width: 1080px) {
+      width: 82%;
+      text-align: left;
+      font-size: 56px;
+    }
   }
 }
 
@@ -336,6 +358,9 @@ footer {
     @media (min-width: 768px) {
       justify-content: center;
       margin: 2rem 0;
+    }
+    @media (min-width: 1080px) {
+      justify-content: start;
     }
     &-card {
       background-color: #333950;
@@ -401,18 +426,22 @@ footer {
 
 #date-section {
   @media (min-width: 768px) {
-    margin: 0 3rem 10rem;
+    margin: 0 3rem 0;
   }
   @media (min-width: 1080px) {
     grid-column-start: 1;
     align-self: center;
-    margin: 330px 3rem 10rem;
+    margin: 350px 3rem 10rem;
   }
 }
 
 #form-section {
   grid-column-start: 1;
   align-self: end;
+  @media (min-width: 1080px) {
+    grid-column-start: 2;
+    align-self: start;
+  }
 }
 
 /*----------------------------
