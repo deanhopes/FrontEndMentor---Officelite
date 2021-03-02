@@ -453,6 +453,9 @@ body {
   font-family: $fontFamily;
   font-size: 16px;
   line-height: 28px;
+  // width: 100vw;
+  height: auto;
+  // overflow: hidden;
 }
 
 h1 {
@@ -465,7 +468,7 @@ h1 {
     text-align: left;
   }
   @media (min-width: 1080px) {
-    font-size: 64px;
+    font-size: 56px;
     line-height: 74px;
   }
 }
