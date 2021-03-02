@@ -240,6 +240,11 @@ footer {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-gap: 64px;
+  @media (min-width: 1080px) {
+    grid-template-rows: 200px 1fr 1fr;
+    grid-gap: 64px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .header {
@@ -365,7 +370,7 @@ footer {
       margin: 0 -10rem;
     }
     &__signup {
-      @media (min-width) {
+      @media (min-width: 1080px) {
         width: 100%;
         margin: auto;
       }
@@ -394,10 +399,20 @@ footer {
   }
 }
 
-#form-signup {
+#date-section {
   @media (min-width: 768px) {
     margin: 0 3rem 10rem;
   }
+  @media (min-width: 1080px) {
+    grid-column-start: 1;
+    align-self: center;
+    margin: 330px 3rem 10rem;
+  }
+}
+
+#form-section {
+  grid-column-start: 1;
+  align-self: end;
 }
 
 /*----------------------------
