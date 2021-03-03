@@ -386,8 +386,25 @@ nav {
   width: 328px;
 }
 
+@media (min-width: 1080px) {
+  .comingsoon {
+    margin: 11rem 18rem 4rem;
+  }
+}
+
 .comingsoon-date {
   color: #5175ff;
+}
+
+@media (min-width: 1080px) {
+  .inline-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.5fr 0.5fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 0.5fr 0.5fr / 1fr;
+    width: 149%;
+  }
 }
 
 .pricing-cards {
@@ -436,6 +453,9 @@ nav {
 
 @media (min-width: 1080px) {
   .date-section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: 2 / 1;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -610,6 +630,14 @@ h3 {
   line-height: 48px;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+
+@media (min-width: 1080px) {
+  h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: 1 / 1;
+  }
 }
 
 .card-price {
@@ -899,6 +927,36 @@ h3 {
   .card-heading__button {
     -ms-grid-row: 5;
         grid-row-start: 5;
+  }
+}
+
+.card-heading__button-grid {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .card-heading__button-grid {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  .card-heading__button-grid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: 2 / 2;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
 

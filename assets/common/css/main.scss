@@ -330,8 +330,19 @@ footer {
   color: white;
   height: 254px;
   width: 328px;
+  @media (min-width: 1080px) {
+    margin: 11rem 18rem 4rem;
+  }
   &-date {
     color: #5175ff;
+  }
+}
+
+.inline-grid {
+  @media (min-width: 1080px) {
+    display: grid;
+    grid-template: 0.5fr 0.5fr / 1fr;
+    width: 149%;
   }
 }
 
@@ -361,6 +372,7 @@ footer {
       margin: 2rem 0;
     }
     @media (min-width: 1080px) {
+      grid-area: 2 / 1;
       justify-content: start;
     }
     &-card {
@@ -485,6 +497,9 @@ h3 {
   line-height: 48px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  @media (min-width: 1080px) {
+    grid-area: 1 / 1;
+  }
 }
 
 .card {
@@ -704,6 +719,20 @@ h3 {
       }
       @media (min-width: 1080px) {
         grid-row-start: 5;
+      }
+    }
+    &__button-grid {
+      grid-column-start: 2;
+      grid-row-start: 5;
+      margin-bottom: 2rem;
+      @media (min-width: 768px) {
+        grid-row-start: 3;
+        align-self: end;
+        margin-bottom: 0;
+      }
+      @media (min-width: 1080px) {
+        grid-area: 2 / 2;
+        align-self: start;
       }
     }
   }
