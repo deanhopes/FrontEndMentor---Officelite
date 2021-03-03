@@ -725,6 +725,7 @@ h3 {
       justify-items: center;
       grid-template-columns: 50px 1fr 50px;
       grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
+      height: 110%;
     }
   }
   &-white {
@@ -742,6 +743,7 @@ h3 {
       justify-items: center;
       grid-template-columns: 50px 1fr 50px;
       grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
+      height: 110%;
     }
   }
   &-paragraph {
