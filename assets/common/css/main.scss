@@ -716,14 +716,11 @@ h3 {
     color: white;
     @media (min-width: 768px) {
       padding: 0;
-      justify-items: start;
+      justify-items: center;
       display: grid;
-      grid-template-columns: 50px 1fr 1fr 50px;
       grid-template-rows: 50px 50px 1fr 50px;
     }
     @media (min-width: 1080px) {
-      justify-items: center;
-      grid-template-columns: 50px 1fr 50px;
       grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
       height: 110%;
     }
@@ -733,15 +730,13 @@ h3 {
     background-color: white;
     justify-self: center;
     @media (min-width: 768px) {
-      padding: 0;
-      justify-items: start;
+      padding: 0 12rem;
+      justify-items: center;
       display: grid;
-      grid-template-columns: 50px 1fr 1fr 50px;
       grid-template-rows: 50px 50px 1fr 50px;
     }
     @media (min-width: 1080px) {
-      justify-items: center;
-      grid-template-columns: 50px 1fr 50px;
+      padding: 0;
       grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
       height: 110%;
     }

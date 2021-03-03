@@ -915,11 +915,9 @@ h3 {
 @media (min-width: 768px) {
   .card-blue {
     padding: 0;
-    justify-items: start;
+    justify-items: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50px 1fr 1fr 50px;
-        grid-template-columns: 50px 1fr 1fr 50px;
     -ms-grid-rows: 50px 50px 1fr 50px;
         grid-template-rows: 50px 50px 1fr 50px;
   }
@@ -927,9 +925,6 @@ h3 {
 
 @media (min-width: 1080px) {
   .card-blue {
-    justify-items: center;
-    -ms-grid-columns: 50px 1fr 50px;
-        grid-template-columns: 50px 1fr 50px;
     -ms-grid-rows: 50px 1fr 2fr 2fr 1fr 50px;
         grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
     height: 110%;
@@ -945,12 +940,10 @@ h3 {
 
 @media (min-width: 768px) {
   .card-white {
-    padding: 0;
-    justify-items: start;
+    padding: 0 12rem;
+    justify-items: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50px 1fr 1fr 50px;
-        grid-template-columns: 50px 1fr 1fr 50px;
     -ms-grid-rows: 50px 50px 1fr 50px;
         grid-template-rows: 50px 50px 1fr 50px;
   }
@@ -958,9 +951,7 @@ h3 {
 
 @media (min-width: 1080px) {
   .card-white {
-    justify-items: center;
-    -ms-grid-columns: 50px 1fr 50px;
-        grid-template-columns: 50px 1fr 50px;
+    padding: 0;
     -ms-grid-rows: 50px 1fr 2fr 2fr 1fr 50px;
         grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
     height: 110%;
