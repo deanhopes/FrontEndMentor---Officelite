@@ -720,6 +720,12 @@ h3 {
       @media (min-width: 1080px) {
         grid-row-start: 5;
       }
+      &-pricing {
+        grid-area: 4 / 2;
+        @media (min-width: 768px) {
+          grid-area: 4 / 2;
+        }
+      }
     }
     &__button-grid {
       grid-column-start: 2;
@@ -747,7 +753,8 @@ h3 {
       padding: 0;
       justify-items: center;
       display: grid;
-      grid-template-rows: 50px 50px 1fr 50px;
+      grid-template-rows: 50px 50px 1fr 0.2fr 50px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1080px) {
       grid-template-rows: 50px 1fr 2fr 2fr 1fr 50px;
@@ -759,10 +766,10 @@ h3 {
     background-color: white;
     justify-self: center;
     @media (min-width: 768px) {
-      padding: 0 12rem;
       justify-items: center;
       display: grid;
-      grid-template-rows: 50px 50px 1fr 50px;
+      grid-template-rows: 50px 50px 1fr 0.2fr 50px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1080px) {
       padding: 0;
