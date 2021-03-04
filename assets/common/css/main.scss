@@ -342,7 +342,7 @@ footer {
   @media (min-width: 1080px) {
     display: grid;
     grid-template: 0.5fr 0.5fr / 1fr;
-    width: 149%;
+    width: 78vw;
   }
 }
 
@@ -561,7 +561,7 @@ h3 {
   margin: 0 auto 32px;
   @media (min-width: 768px) {
     width: 100%;
-    height: 314px;
+    height: 70%;
   }
   @media (min-width: 1080px) {
     width: 100%;
@@ -694,9 +694,13 @@ h3 {
     line-height: 28px;
     margin: 40px 0 40px 0;
     @media (min-width: 768px) {
+      justify-self: start;
       grid-row-start: 2;
       grid-column-start: 2;
       margin: 1rem 0;
+    }
+    @media (min-width: 1080px) {
+      justify-self: center;
     }
     &__price {
       grid-column-start: 2;
@@ -722,8 +726,14 @@ h3 {
       }
       &-pricing {
         grid-area: 4 / 2;
+        margin-bottom: 4rem;
         @media (min-width: 768px) {
           grid-area: 4 / 2;
+          margin: 0;
+        }
+        @media (min-width: 1080px) {
+          grid-area: 5 / 2;
+          margin: 0;
         }
       }
     }
